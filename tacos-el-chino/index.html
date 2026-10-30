@@ -11,73 +11,92 @@
 <meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/960px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Arial, Helvetica, sans-serif; color: #26221f; background: #fffaf3; line-height: 1.55; }
-  .topbar { background: #7a1f1f; color: #fff; text-align: center; padding: 8px 12px; font-size: 14px; }
-  header.hero { position: relative; color: #fff; text-align: center; }
-  header.hero img { width: 100%; height: 420px; object-fit: cover; display: block; filter: brightness(.62); }
-  header.hero .overlay { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; }
-  header.hero h1 { font-size: 40px; text-shadow: 0 2px 10px rgba(0,0,0,.5); margin-bottom: 8px; }
-  header.hero p { font-size: 18px; max-width: 620px; text-shadow: 0 1px 6px rgba(0,0,0,.6); }
-  .badge { background: #f5b921; color: #26221f; font-weight: bold; border-radius: 20px; padding: 5px 14px; font-size: 14px; margin-bottom: 14px; }
-  .cta { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
-  .cta a { text-decoration: none; font-weight: bold; padding: 12px 22px; border-radius: 8px; }
-  .cta .call { background: #f5b921; color: #26221f; }
-  .cta .dir { background: rgba(255,255,255,.92); color: #7a1f1f; }
-  section { max-width: 980px; margin: 0 auto; padding: 34px 16px 6px; }
-  h2 { font-size: 26px; color: #7a1f1f; margin-bottom: 12px; }
-  .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
-  .menu-item { background: #fff; border: 1px solid #f0e2cd; border-radius: 10px; padding: 14px 16px; }
-  .menu-item h3 { font-size: 17px; margin-bottom: 4px; }
-  .menu-item p { font-size: 14px; color: #5c554d; }
-  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
-  .gallery img { width: 100%; height: 210px; object-fit: cover; border-radius: 10px; }
-  .visit { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
-  .visit .box { background: #fff; border: 1px solid #f0e2cd; border-radius: 10px; padding: 18px; }
-  .visit .box p { margin-bottom: 6px; }
-  .big-call { display: block; text-align: center; background: #7a1f1f; color: #fff; font-weight: bold; font-size: 18px; text-decoration: none; padding: 14px; border-radius: 10px; margin: 22px 16px 0; max-width: 948px; }
-  footer { text-align: center; color: #8a7f72; font-size: 13px; padding: 26px 16px 34px; }
-  @media (max-width: 600px) { header.hero h1 { font-size: 30px; } header.hero img { height: 340px; } }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #2b2320; background: #fff8f0; line-height: 1.55; }
+  .topnav { position: sticky; top: 0; z-index: 10; background: rgba(58,16,16,.97); display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; border-bottom: 2px solid #e8871e; }
+  .topnav .brand { color: #fff; font-weight: 800; font-size: 18px; letter-spacing: .4px; }
+  .topnav .brand span { color: #f2b544; }
+  .topnav a.call { background: #e8871e; color: #fff; text-decoration: none; font-weight: 700; padding: 9px 16px; border-radius: 24px; font-size: 14px; }
+  .hero { position: relative; color: #fff; text-align: center; }
+  .hero img { width: 100%; height: 480px; object-fit: cover; display: block; filter: saturate(1.12) contrast(1.05); }
+  .hero .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(43,10,10,.38), rgba(43,10,10,.88)); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px; }
+  .hero h1 { font-size: 42px; font-weight: 900; letter-spacing: .5px; }
+  .hero h1 span { color: #f2b544; }
+  .hero p.tag { font-size: 19px; margin-top: 8px; max-width: 640px; }
+  .stars { background: #f2b544; color: #3a1010; font-weight: 800; border-radius: 24px; padding: 6px 16px; margin-bottom: 16px; font-size: 15px; }
+  .hero .cta { margin-top: 22px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  .hero .cta a { text-decoration: none; font-weight: 700; padding: 13px 26px; border-radius: 28px; font-size: 16px; }
+  .cta .book { background: #c1272d; color: #fff; }
+  .cta .dir { background: #fff; color: #7a1f1f; }
+  .strip { background: linear-gradient(90deg, #c1272d, #e8871e); color: #fff; text-align: center; padding: 12px; font-weight: 600; font-size: 15px; }
+  section { max-width: 1020px; margin: 0 auto; padding: 42px 18px 10px; }
+  h2 { font-size: 29px; font-weight: 800; color: #7a1f1f; margin-bottom: 6px; }
+  h2 .bar { display: block; width: 58px; height: 4px; background: #e8871e; border-radius: 2px; margin-top: 8px; }
+  .lead { color: #5c4a42; max-width: 760px; margin-bottom: 18px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 14px; }
+  .card { background: #fff; border-radius: 14px; padding: 20px 18px; box-shadow: 0 3px 14px rgba(120,50,20,.10); border-top: 4px solid #e8871e; }
+  .card .icon { font-size: 26px; }
+  .card h3 { font-size: 17px; margin: 8px 0 4px; color: #7a1f1f; }
+  .card p { font-size: 14px; color: #6b584f; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
+  .gallery img { width: 100%; height: 230px; object-fit: cover; border-radius: 14px; filter: saturate(1.12) contrast(1.05); }
+  .split { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .panel { background: #fff; border-radius: 14px; padding: 22px; box-shadow: 0 3px 14px rgba(120,50,20,.10); }
+  .panel h3 { font-size: 19px; margin-bottom: 10px; color: #7a1f1f; }
+  table.hours { width: 100%; border-collapse: collapse; font-size: 15px; }
+  table.hours td { padding: 6px 4px; border-bottom: 1px solid #f3e3d3; }
+  table.hours td:last-child { text-align: right; font-weight: 600; }
+  iframe.map { width: 100%; height: 260px; border: 0; border-radius: 14px; }
+  .big-cta { max-width: 1020px; margin: 30px auto 0; padding: 0 18px; }
+  .big-cta a { display: block; text-align: center; background: linear-gradient(90deg, #c1272d, #e8871e); color: #fff; text-decoration: none; font-size: 19px; font-weight: 800; padding: 16px; border-radius: 14px; }
+  footer { background: #2b1010; color: #d9c4b8; text-align: center; padding: 30px 18px 40px; margin-top: 44px; font-size: 14px; }
+  footer a { color: #f2b544; text-decoration: none; }
+  @media (max-width: 600px) { .hero h1 { font-size: 31px; } .hero img { height: 400px; } }
 </style>
 </head>
 <body>
-<div class="topbar">Open today 8:00 AM – 10:00 PM · (214) 353-2203 · 9748 Brockbank Dr, Dallas</div>
+<nav class="topnav">
+  <div class="brand">TACOS <span>EL CHINO</span></div>
+  <a class="call" href="tel:+12143532203">📞 (214) 353-2203</a>
+</nav>
 
 <header class="hero">
   <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/960px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg" alt="Fresh tacos at Restaurant Y Tacos El Chino">
-  <div class="overlay">
-    <span class="badge">★ 5.0 · Rated 5 stars by our customers</span>
-    <h1>Restaurant Y Tacos El Chino</h1>
-    <p>Authentic Mexican food in Dallas — tacos, pozole, menudo and homemade favorites, served fresh every day.</p>
+  <div class="shade">
+    <div class="stars">★ 5.0 · Rated 5 stars by our customers</div>
+    <h1>Restaurant Y Tacos <span>El Chino</span></h1>
+    <p class="tag">Authentic Mexican food in Dallas — tacos, pozole, menudo and homemade favorites, served fresh every day.</p>
     <div class="cta">
-      <a class="call" href="tel:+12143532203">Call to Order</a>
+      <a class="book" href="tel:+12143532203">Call to Order</a>
       <a class="dir" href="https://www.google.com/maps/search/?api=1&query=Restaurant+Y+Tacos+El+Chino+9748+Brockbank+Dr+Dallas+TX+75220">Get Directions</a>
     </div>
   </div>
 </header>
+<div class="strip">Open 7 days · 8:00 AM – 10:00 PM · Breakfast served all day</div>
 
+<main>
 <section>
-  <h2>A Dallas Favorite</h2>
-  <p>Tucked into Brockbank Drive, Restaurant Y Tacos El Chino serves the kind of Mexican cooking that keeps neighbors coming back — traditional tacos, rich soups and breakfast plates, made fresh from morning to night. With a perfect 5.0-star rating, it is one of Dallas's best-loved taquerias.</p>
+  <h2>A Dallas Favorite<span class="bar"></span></h2>
+  <p class="lead">Tucked into Brockbank Drive, Restaurant Y Tacos El Chino serves the kind of Mexican cooking that keeps neighbors coming back — traditional tacos, rich soups and breakfast plates, made fresh from morning to night. With a perfect 5.0-star rating, it is one of Dallas's best-loved taquerias.</p>
 </section>
 
 <section>
-  <h2>Menu Highlights</h2>
-  <div class="menu-grid">
-    <div class="menu-item"><h3>Tacos de Cabeza de Puerco</h3><p>Slow-cooked pork head tacos — tender, rich and traditional.</p></div>
-    <div class="menu-item"><h3>Tacos de Tripitas</h3><p>Crispy tripitas tacos, a house specialty for true taco lovers.</p></div>
-    <div class="menu-item"><h3>Tacos de Pescado</h3><p>Fresh fish tacos, light and full of flavor.</p></div>
-    <div class="menu-item"><h3>Pozole</h3><p>Classic hominy soup with pork, served with all the fixings.</p></div>
-    <div class="menu-item"><h3>Menudo</h3><p>Traditional weekend favorite, simmered low and slow.</p></div>
-    <div class="menu-item"><h3>Chilaquiles Rojos</h3><p>Tortilla chips in red salsa — a breakfast classic, served all day.</p></div>
-    <div class="menu-item"><h3>Enchiladas Rojas</h3><p>Rolled tortillas in red chile sauce, made to order.</p></div>
-    <div class="menu-item"><h3>Sopa de Mariscos</h3><p>Hearty seafood soup, packed with flavor.</p></div>
-    <div class="menu-item"><h3>Tortas &amp; Breakfast</h3><p>Mexican sandwiches and breakfast plates to start the day right.</p></div>
+  <h2>Menu Highlights<span class="bar"></span></h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🌮</div><h3>Tacos de Cabeza de Puerco</h3><p>Slow-cooked pork head tacos — tender, rich and traditional.</p></div>
+    <div class="card"><div class="icon">🌮</div><h3>Tacos de Tripitas</h3><p>Crispy tripitas tacos, a house specialty for true taco lovers.</p></div>
+    <div class="card"><div class="icon">🐟</div><h3>Tacos de Pescado</h3><p>Fresh fish tacos, light and full of flavor.</p></div>
+    <div class="card"><div class="icon">🍲</div><h3>Pozole</h3><p>Classic hominy soup with pork, served with all the fixings.</p></div>
+    <div class="card"><div class="icon">🥘</div><h3>Menudo</h3><p>Traditional favorite, simmered low and slow.</p></div>
+    <div class="card"><div class="icon">🍳</div><h3>Chilaquiles Rojos</h3><p>Tortilla chips in red salsa — a breakfast classic, served all day.</p></div>
+    <div class="card"><div class="icon">🌶️</div><h3>Enchiladas Rojas</h3><p>Rolled tortillas in red chile sauce, made to order.</p></div>
+    <div class="card"><div class="icon">🦐</div><h3>Sopa de Mariscos</h3><p>Hearty seafood soup, packed with flavor.</p></div>
+    <div class="card"><div class="icon">🥪</div><h3>Tortas &amp; Breakfast</h3><p>Mexican sandwiches and breakfast plates to start the day right.</p></div>
   </div>
-  <p style="margin-top:12px; font-size:14px; color:#5c554d;">Call us at (214) 353-2203 for today's full menu and prices.</p>
+  <p style="margin-top:12px; font-size:14px; color:#6b584f;">Call us at (214) 353-2203 for today's full menu and prices.</p>
 </section>
 
 <section>
-  <h2>From Our Kitchen</h2>
+  <h2>From Our Kitchen<span class="bar"></span></h2>
   <div class="gallery">
     <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/%28El_Flaco%29_Al_Pastor_Tacos.jpg/960px-%28El_Flaco%29_Al_Pastor_Tacos.jpg" alt="Tacos al pastor">
     <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Pozole_Rojo_Mexicano.jpg/960px-Pozole_Rojo_Mexicano.jpg" alt="Pozole rojo">
@@ -86,20 +105,30 @@
 </section>
 
 <section>
-  <h2>Visit Us</h2>
-  <div class="visit">
-    <div class="box">
-      <p><strong>Address</strong><br>9748 Brockbank Dr, Ste 100<br>Dallas, TX 75220</p>
-      <p><strong>Phone</strong><br><a href="tel:+12143532203">(214) 353-2203</a></p>
+  <h2>Visit Us<span class="bar"></span></h2>
+  <div class="split">
+    <div class="panel">
+      <h3>Hours &amp; Contact</h3>
+      <table class="hours">
+        <tr><td>Monday – Sunday</td><td>8:00 AM – 10:00 PM</td></tr>
+        <tr><td colspan="2" style="text-align:left; color:#6b584f;">Open 7 days a week</td></tr>
+      </table>
+      <p style="margin-top:12px;">9748 Brockbank Dr, Suite 100<br>Dallas, TX 75220<br><strong><a href="tel:+12143532203" style="color:#c1272d; text-decoration:none;">(214) 353-2203</a></strong></p>
     </div>
-    <div class="box">
-      <p><strong>Hours</strong><br>Monday – Sunday<br>8:00 AM – 10:00 PM<br><em>Open 7 days a week</em></p>
+    <div class="panel">
+      <h3>Find Us</h3>
+      <iframe class="map" loading="lazy" src="https://www.google.com/maps?q=Restaurant%20Y%20Tacos%20El%20Chino%209748%20Brockbank%20Dr%20Dallas%20TX%2075220&output=embed" title="Map to Restaurant Y Tacos El Chino"></iframe>
     </div>
   </div>
 </section>
 
-<a class="big-call" href="tel:+12143532203">Call (214) 353-2203 to Order</a>
+<div class="big-cta"><a href="tel:+12143532203">📞 Call (214) 353-2203 to Order</a></div>
+</main>
 
-<footer>Restaurant Y Tacos El Chino · 9748 Brockbank Dr, Ste 100, Dallas, TX 75220 · Food photos for illustration.</footer>
+<footer>
+  Restaurant Y Tacos El Chino · 9748 Brockbank Dr, Ste 100, Dallas, TX 75220 ·
+  <a href="https://www.instagram.com/elchinomexicanfood">Instagram @elchinomexicanfood</a><br>
+  Food photos for illustration.
+</footer>
 </body>
 </html>
