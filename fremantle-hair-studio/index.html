@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fremantle Hair Studio — Fremantle WA</title>
+<meta name="description" content="Fremantle Hair Studio, William Street Fremantle — weft & bond/KTI hair extensions, custom colour, colour correction, scalp bleach, blonde & balayage and haircuts. Open Wed–Sun 10 AM – 5 PM.">
+<meta property="og:title" content="Fremantle Hair Studio — Fremantle WA">
+<meta property="og:description" content="Extensions, blonde & balayage specialists on William Street, Fremantle. ★ 5.0 · Top-rated on Google. Open Wed–Sun 10 AM – 5 PM.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/fremantle-hair-studio/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Blonder_6.jpg/1280px-Blonder_6.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --sea:#0b5563; --sea-dark:#06333d; --coral:#ff6b4a; --gold:#f2b134;
+    --cream:#fff8f0; --ink:#1f2937; --muted:#6b7280;
+  }
+  body{ font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; }
+  img{ max-width:100%; display:block; }
+  a{ text-decoration:none; }
+
+  header{ position:sticky; top:0; z-index:50; background:rgba(6,51,61,.97); color:#fff;
+    display:flex; align-items:center; justify-content:space-between; padding:.7rem 1rem;
+    box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  .brand{ font-size:1.15rem; font-weight:800; letter-spacing:.5px; }
+  .brand span{ color:var(--gold); }
+  .call-btn{ background:var(--coral); color:#fff; font-weight:700; padding:.55rem 1rem; border-radius:999px; font-size:.95rem; white-space:nowrap; }
+  .call-btn:active{ transform:scale(.97); }
+
+  .hero{ position:relative; color:#fff; text-align:center; }
+  .hero img{ width:100%; height:62vh; min-height:340px; object-fit:cover; }
+  .hero-overlay{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(6,51,61,.30),rgba(6,51,61,.88));
+    display:flex; flex-direction:column; justify-content:flex-end; align-items:center; padding:2rem 1.2rem 2.4rem; }
+  .hero h1{ font-size:2.5rem; line-height:1.1; text-shadow:0 2px 12px rgba(0,0,0,.4); }
+  .hero p.tag{ font-size:1.08rem; margin-top:.5rem; color:#ffe8d6; }
+  .badge{ display:inline-block; margin-top:1rem; background:#fff; color:var(--sea-dark); font-weight:700;
+    padding:.4rem 1rem; border-radius:999px; font-size:.95rem; box-shadow:0 4px 14px rgba(0,0,0,.3); }
+  .badge .star{ color:#f59e0b; }
+  .hero-cta{ margin-top:1.2rem; display:flex; gap:.6rem; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:.7rem 1.4rem; border-radius:999px; font-weight:700; }
+  .btn-call{ background:var(--coral); color:#fff; }
+  .btn-ig{ background:#fff; color:var(--sea-dark); }
+
+  section{ padding:3rem 1.2rem; max-width:1080px; margin:0 auto; }
+  h2{ font-size:1.8rem; text-align:center; color:var(--sea-dark); margin-bottom:.4rem; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:2rem; }
+  .about p{ max-width:720px; margin:0 auto 1rem; text-align:center; font-size:1.05rem; }
+
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
+  .card{ background:#fff; border-radius:16px; padding:1.4rem 1.2rem; text-align:center;
+    box-shadow:0 4px 16px rgba(11,85,99,.10); border-top:5px solid var(--coral); }
+  .card .icon{ font-size:2rem; }
+  .card h3{ margin:.5rem 0 .3rem; font-size:1.08rem; color:var(--sea-dark); }
+  .card p{ color:var(--muted); font-size:.93rem; }
+  .card .spec{ display:inline-block; margin-top:.6rem; background:#fef3c7; color:#92400e; font-size:.78rem; font-weight:700; padding:.2rem .7rem; border-radius:999px; }
+
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.8rem; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.15); }
+
+  .hours-wrap{ max-width:520px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(11,85,99,.10); }
+  table{ width:100%; border-collapse:collapse; }
+  td{ padding:.8rem 1.2rem; border-bottom:1px solid #fde68a; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--sea-dark); }
+  .closed{ color:#dc2626 !important; }
+
+  .visit{ text-align:center; }
+  .visit address{ font-style:normal; font-size:1.05rem; margin-bottom:1.2rem; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,.15); }
+
+  .cta-band{ background:linear-gradient(120deg,var(--sea),var(--sea-dark)); color:#fff; text-align:center; padding:2.6rem 1.2rem; }
+  .cta-band h2{ color:#fff; }
+  .cta-band p{ color:#cffafe; margin-bottom:1.4rem; }
+
+  footer{ background:#04262e; color:#a5f3fc; text-align:center; padding:1.4rem 1rem; font-size:.9rem; }
+  footer a{ color:var(--gold); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">FREMANTLE <span>HAIR STUDIO</span></div>
+  <a class="call-btn" href="tel:+61893351847">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Blonder_6.jpg/1280px-Blonder_6.jpg" alt="Blonde balayage hair at Fremantle Hair Studio">
+  <div class="hero-overlay">
+    <h1>Fremantle Hair Studio</h1>
+    <p class="tag">Extensions, blonde &amp; balayage specialists — William Street, Fremantle</p>
+    <div class="badge"><span class="star">★</span> 5.0 · Top-rated on Google</div>
+    <div class="hero-cta">
+      <a class="btn btn-call" href="tel:+61893351847">📞 +61 8 9335 1847</a>
+      <a class="btn btn-ig" href="https://www.instagram.com/fremantlehairstudio" target="_blank" rel="noopener">📸 @fremantlehairstudio</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p class="sub">Inside Fremantle Malls, in the heart of Freo</p>
+  <p>Fremantle Hair Studio sits inside Fremantle Malls on William Street — a bright, welcoming salon best known for its weft and bond/KTI hair extensions, the studio's speciality.</p>
+  <p>From custom colour and colour correction to scalp bleach, blonde &amp; balayage and fresh haircuts, the team is open Wednesday to Sunday, 10 AM to 5 PM. Walk-ins are welcome to drop by, or call ahead to book your chair.</p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <p class="sub">What we do best — call us for pricing and bookings</p>
+  <div class="cards">
+    <div class="card"><div class="icon">💁‍♀️</div><h3>Weft &amp; Bond/KTI Extensions</h3><p>Our speciality — premium weft and bond/KTI hair extensions for natural-looking length and fullness, colour-matched to your own hair.</p><span class="spec">★ Our Speciality</span></div>
+    <div class="card"><div class="icon">🎨</div><h3>Custom Colour</h3><p>Colour created just for you — from a complete transformation to a subtle shift in tone.</p></div>
+    <div class="card"><div class="icon">🛠️</div><h3>Colour Correction</h3><p>Expert fix-ups for colour gone wrong — banding, brassiness and uneven tones, corrected with care.</p></div>
+    <div class="card"><div class="icon">❄️</div><h3>Scalp Bleach</h3><p>Full scalp bleach for that clean, bright, all-over blonde result.</p></div>
+    <div class="card"><div class="icon">✨</div><h3>Blonde &amp; Balayage</h3><p>Lived-in balayage and luminous blondes, tailored to your skin tone and lifestyle.</p></div>
+    <div class="card"><div class="icon">✂️</div><h3>Haircuts</h3><p>Fresh, well-shaped haircuts that finish the look and grow out beautifully.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Blondes, balayage, extensions &amp; inside the studio</p>
+  <div class="gallery">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Blonder_6.jpg/1280px-Blonder_6.jpg" alt="Blonde balayage, back view">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Clip-in_Hair_Extensions_-_50887327353.jpg/1280px-Clip-in_Hair_Extensions_-_50887327353.jpg" alt="Blonde hair extensions">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Deep_wave%2Cdeep_curl.jpg" alt="Deep-wave hair extensions">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Hair_salon_-_Arlington%2C_MA.jpg/1280px-Hair_salon_-_Arlington%2C_MA.jpg" alt="Inside the salon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Cabelo-tettenhall.jpg" alt="Salon styling stations and wash area">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Inside_the_Hair_Salon_%285577833869%29.jpg/1280px-Inside_the_Hair_Salon_%285577833869%29.jpg" alt="Salon wash basins">
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Open five days a week in Fremantle</p>
+  <div class="hours-wrap">
+    <table>
+      <tr><td>Monday</td><td class="closed">Closed</td></tr>
+      <tr><td>Tuesday</td><td class="closed">Closed</td></tr>
+      <tr><td>Wednesday</td><td>10:00 AM – 5:00 PM</td></tr>
+      <tr><td>Thursday</td><td>10:00 AM – 5:00 PM</td></tr>
+      <tr><td>Friday</td><td>10:00 AM – 5:00 PM</td></tr>
+      <tr><td>Saturday</td><td>10:00 AM – 5:00 PM</td></tr>
+      <tr><td>Sunday</td><td>10:00 AM – 5:00 PM</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p class="sub">Find us inside Fremantle Malls</p>
+  <address>Unit 46 Fremantle Malls, 27–35 William Street,<br>Fremantle WA 6160</address>
+  <iframe class="map" loading="lazy" title="Map — Fremantle Hair Studio"
+    src="https://www.google.com/maps?q=Fremantle%20Hair%20Studio%2C%20Unit%2046%20Fremantle%20Malls%2C%2027-35%20William%20Street%2C%20Fremantle%20WA%206160&output=embed"></iframe>
+</section>
+
+<div class="cta-band">
+  <h2>Ready for great hair?</h2>
+  <p>Call us to book your appointment — or follow our latest work on Instagram.</p>
+  <div class="hero-cta">
+    <a class="btn btn-call" href="tel:+61893351847">📞 +61 8 9335 1847</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/fremantlehairstudio" target="_blank" rel="noopener">📸 @fremantlehairstudio</a>
+  </div>
+</div>
+
+<footer>
+  Fremantle Hair Studio · Unit 46 Fremantle Malls, 27–35 William Street, Fremantle WA 6160<br>
+  📞 <a href="tel:+61893351847">+61 8 9335 1847</a> · 📸 <a href="https://www.instagram.com/fremantlehairstudio" target="_blank" rel="noopener">@fremantlehairstudio</a>
+</footer>
+
+</body>
+</html>
