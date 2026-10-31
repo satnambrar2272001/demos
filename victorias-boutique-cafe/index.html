@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victoria's Boutique Cafe — Sector 8, Chandigarh</title>
+<meta name="description" content="Victoria's Boutique Cafe, Sector 8, Chandigarh — speciality coffee, avocado toast, focaccia sandwiches, waffles and homemade cakes.">
+<meta property="og:title" content="Victoria's Boutique Cafe — Sector 8, Chandigarh">
+<meta property="og:description" content="Speciality coffee, avocado toast, waffles & homemade cakes in Sector 8's Inner Market. ★ 4.5 · 166 Google reviews.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/victorias-boutique-cafe/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cappuccino_with_latte_art_on_Coffee_Right_in_Brno%2C_Brno-City_District.jpg/1280px-Cappuccino_with_latte_art_on_Coffee_Right_in_Brno%2C_Brno-City_District.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --plum:#7e22ce; --plum-dark:#581c87; --rose:#e11d63; --gold:#d97706;
+    --cream:#fdf4ff; --ink:#291d33; --muted:#6d6472;
+  }
+  body{ font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; }
+  img{ max-width:100%; display:block; }
+  a{ text-decoration:none; }
+
+  header{ position:sticky; top:0; z-index:50; background:rgba(88,28,135,.97); color:#fff;
+    display:flex; align-items:center; justify-content:space-between; padding:.7rem 1rem;
+    box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  .brand{ font-size:1.12rem; font-weight:800; letter-spacing:.3px; }
+  .brand span{ color:#fbbf24; }
+  .call-btn{ background:var(--rose); color:#fff; font-weight:700; padding:.55rem 1rem; border-radius:999px; font-size:.95rem; white-space:nowrap; }
+  .call-btn:active{ transform:scale(.97); }
+
+  .hero{ position:relative; color:#fff; text-align:center; }
+  .hero img{ width:100%; height:62vh; min-height:340px; object-fit:cover; }
+  .hero-overlay{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(88,28,135,.30),rgba(59,7,100,.88));
+    display:flex; flex-direction:column; justify-content:flex-end; align-items:center; padding:2rem 1.2rem 2.4rem; }
+  .hero h1{ font-size:2.3rem; line-height:1.15; text-shadow:0 2px 12px rgba(0,0,0,.4); }
+  .hero p.tag{ font-size:1.08rem; margin-top:.5rem; color:#f5d0fe; }
+  .badge{ display:inline-block; margin-top:1rem; background:#fff; color:var(--plum-dark); font-weight:700;
+    padding:.4rem 1rem; border-radius:999px; font-size:.95rem; box-shadow:0 4px 14px rgba(0,0,0,.3); }
+  .badge .star{ color:#f59e0b; }
+  .hero-cta{ margin-top:1.2rem; display:flex; gap:.6rem; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:.7rem 1.4rem; border-radius:999px; font-weight:700; }
+  .btn-call{ background:var(--rose); color:#fff; }
+  .btn-ig{ background:#fff; color:var(--plum-dark); }
+
+  section{ padding:3rem 1.2rem; max-width:1080px; margin:0 auto; }
+  h2{ font-size:1.8rem; text-align:center; color:var(--plum-dark); margin-bottom:.4rem; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:2rem; }
+  .about p{ max-width:720px; margin:0 auto 1rem; text-align:center; font-size:1.05rem; }
+
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
+  .card{ background:#fff; border-radius:16px; padding:1.4rem 1.2rem; text-align:center;
+    box-shadow:0 4px 16px rgba(88,28,135,.10); border-top:5px solid var(--rose); }
+  .card .icon{ font-size:2rem; }
+  .card h3{ margin:.5rem 0 .3rem; font-size:1.08rem; color:var(--plum-dark); }
+  .card p{ color:var(--muted); font-size:.93rem; }
+
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.8rem; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.15); }
+
+  .hours-wrap{ max-width:520px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(88,28,135,.10); }
+  table{ width:100%; border-collapse:collapse; }
+  td{ padding:.8rem 1.2rem; border-bottom:1px solid #f5d0fe; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--plum-dark); }
+
+  .visit{ text-align:center; }
+  .visit address{ font-style:normal; font-size:1.05rem; margin-bottom:1.2rem; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,.15); }
+
+  .cta-band{ background:linear-gradient(120deg,var(--plum),var(--plum-dark)); color:#fff; text-align:center; padding:2.6rem 1.2rem; }
+  .cta-band h2{ color:#fff; }
+  .cta-band p{ color:#f5d0fe; margin-bottom:1.4rem; }
+
+  footer{ background:#3b0764; color:#e9d5ff; text-align:center; padding:1.4rem 1rem; font-size:.9rem; }
+  footer a{ color:#fbbf24; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Victoria's <span>Boutique Cafe</span></div>
+  <a class="call-btn" href="tel:+911724781121">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cappuccino_with_latte_art_on_Coffee_Right_in_Brno%2C_Brno-City_District.jpg/1280px-Cappuccino_with_latte_art_on_Coffee_Right_in_Brno%2C_Brno-City_District.jpg" alt="Cappuccino with latte art at Victoria's Boutique Cafe">
+  <div class="hero-overlay">
+    <h1>Victoria's Boutique Cafe</h1>
+    <p class="tag">Speciality coffee &amp; homemade bakes — Sector 8, Chandigarh</p>
+    <div class="badge"><span class="star">★</span> 4.5 · 166 Google reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-call" href="tel:+911724781121">📞 +91 172 478 1121</a>
+      <a class="btn btn-ig" href="https://www.instagram.com/victoriascafe_chd" target="_blank" rel="noopener">📸 @victoriascafe_chd</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p class="sub">A boutique cafe in the Inner Market, Sector 8</p>
+  <p>Victoria's Boutique Cafe is a cosy corner of Sector 8-B's Inner Market, Chandigarh, built around speciality coffee — from a smooth cortado or cappuccino to our own Victoria blend.</p>
+  <p>Pair your cup with avocado toast, a cottage cheese focaccia sandwich, golden waffles or a slice of homemade cake. We open bright and early on weekdays, stay open till midnight on Saturdays, and welcome you in from lunchtime on Sundays.</p>
+</section>
+
+<section>
+  <h2>Menu Highlights</h2>
+  <p class="sub">Coffee, brunch and bakes — the boutique way</p>
+  <div class="cards">
+    <div class="card"><div class="icon">☕</div><h3>Speciality Coffee</h3><p>Cortado, cappuccino and our signature Victoria blend — brewed with care, every cup.</p></div>
+    <div class="card"><div class="icon">🥑</div><h3>Avocado Toast</h3><p>Fresh avocado toast — a light, wholesome favourite for any time of day.</p></div>
+    <div class="card"><div class="icon">🥪</div><h3>Cottage Cheese Focaccia Sandwich</h3><p>Cottage cheese layered in soft focaccia — a satisfying boutique bite.</p></div>
+    <div class="card"><div class="icon">🧇</div><h3>Waffles</h3><p>Golden, crisp waffles — perfect with coffee or as a sweet treat on their own.</p></div>
+    <div class="card"><div class="icon">🍰</div><h3>Homemade Cakes</h3><p>Homemade cakes baked with love — ask at the counter what is fresh today.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Moments from the cafe</p>
+  <div class="gallery">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/2021_cortado_Poznan.jpg/1280px-2021_cortado_Poznan.jpg" alt="Coffee with latte art">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Avocado_toast.jpg/1280px-Avocado_toast.jpg" alt="Avocado toast">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Panini_broodje.jpg/1280px-Panini_broodje.jpg" alt="Focaccia sandwich">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Waffle_with_strawberries_and_confectioner%27s_sugar.jpg/1280px-Waffle_with_strawberries_and_confectioner%27s_sugar.jpg" alt="Waffle with strawberries">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Chocolate_cake_and_Victoria_sponge.jpg/1280px-Chocolate_cake_and_Victoria_sponge.jpg" alt="Homemade cakes">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Cafe_Max_interior_Russell_Street_Stroud_Gloucestershire_England.jpg/1280px-Cafe_Max_interior_Russell_Street_Stroud_Gloucestershire_England.jpg" alt="Cafe interior">
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Weekend hours differ — please check below</p>
+  <div class="hours-wrap">
+    <table>
+      <tr><td>Monday</td><td>7:30 AM – 10:30 PM</td></tr>
+      <tr><td>Tuesday</td><td>7:30 AM – 10:30 PM</td></tr>
+      <tr><td>Wednesday</td><td>7:30 AM – 10:30 PM</td></tr>
+      <tr><td>Thursday</td><td>7:30 AM – 10:30 PM</td></tr>
+      <tr><td>Friday</td><td>7:30 AM – 10:30 PM</td></tr>
+      <tr><td>Saturday</td><td>7:30 AM – 12:00 AM</td></tr>
+      <tr><td>Sunday</td><td>12:30 PM – 10:30 PM</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p class="sub">Find us in the Inner Market</p>
+  <address>SCO 37, Inner Market, Sector 8-B,<br>Chandigarh 160009</address>
+  <iframe class="map" loading="lazy" title="Victoria's Boutique Cafe location map"
+    src="https://www.google.com/maps?q=Victoria%27s%20Boutique%20Cafe%2C%20SCO%2037%2C%20Inner%20Market%2C%20Sector%208-B%2C%20Chandigarh%20160009&output=embed"></iframe>
+</section>
+
+<div class="cta-band">
+  <h2>Come say hello!</h2>
+  <p>Call us for enquiries, or follow us on Instagram for fresh bakes and coffee moments.</p>
+  <div class="hero-cta">
+    <a class="btn btn-call" href="tel:+911724781121">📞 Call +91 172 478 1121</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/victoriascafe_chd" target="_blank" rel="noopener">📸 Follow @victoriascafe_chd</a>
+  </div>
+</div>
+
+<footer>
+  © Victoria's Boutique Cafe · SCO 37, Inner Market, Sector 8-B, Chandigarh 160009 · <a href="tel:+911724781121">+91 172 478 1121</a>
+</footer>
+
+</body>
+</html>

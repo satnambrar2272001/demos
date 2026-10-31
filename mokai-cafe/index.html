@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mokai Cafe — Pali Hill, Bandra West | Matcha, Sandos & Asian-Fusion</title>
+<meta name="description" content="Mokai Cafe in Pali Hill, Bandra West — ceremonial-grade matcha, Japanese sandos and Asian-fusion favourites. Open daily 8:00 AM – 11:30 PM.">
+<meta property="og:title" content="Mokai Cafe — Pali Hill, Bandra West">
+<meta property="og:description" content="Matcha, sandos & Asian-fusion plates in the heart of Pali Hill. Rated 4.3 on Google with 1,700+ reviews. Open daily 8:00 AM – 11:30 PM.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/mokai-cafe/">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Matcha_tea_latte_with_rosetta_latte_art.jpg/1280px-Matcha_tea_latte_with_rosetta_latte_art.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --green:#1f4630; --green2:#2e5b3e; --cream:#faf6ee; --ink:#22301f;
+    --gold:#c9a24b; --card:#ffffff; --muted:#5c6a58;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+  img{display:block;max-width:100%}
+  a{text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+  /* Sticky header */
+  header{position:sticky;top:0;z-index:50;background:var(--green);box-shadow:0 2px 12px rgba(0,0,0,.25)}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;max-width:1080px;margin:0 auto}
+  .brand{color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:1.35rem;letter-spacing:.14em;font-weight:700}
+  .brand small{display:block;font-family:inherit;font-size:.62rem;letter-spacing:.3em;color:var(--gold);font-weight:600}
+  .call-btn{background:var(--gold);color:#241a02;font-weight:700;padding:9px 16px;border-radius:999px;font-size:.9rem;white-space:nowrap}
+  .call-btn:active{transform:scale(.97)}
+
+  /* Hero */
+  .hero{position:relative;color:#fff}
+  .hero img{width:100%;height:62vh;min-height:380px;object-fit:cover}
+  .hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,35,22,.25),rgba(15,35,22,.82))}
+  .hero .content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:28px 18px 34px;max-width:1080px;margin:0 auto;width:100%}
+  .hero h1{font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;line-height:1.1;letter-spacing:.02em}
+  .hero p.tag{font-size:1.08rem;margin-top:8px;color:#f3ead2;max-width:560px}
+  .badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:#7a5b12;font-weight:700;padding:6px 14px;border-radius:999px;font-size:.9rem;margin-top:16px;width:fit-content}
+  .hero .actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{padding:12px 22px;border-radius:999px;font-weight:700;font-size:.95rem}
+  .btn-solid{background:var(--gold);color:#241a02}
+  .btn-ghost{border:2px solid #fff;color:#fff}
+
+  section{padding:52px 0}
+  h2{font-family:Georgia,"Times New Roman",serif;font-size:1.9rem;color:var(--green);margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:26px;max-width:640px}
+  .about p{max-width:720px;margin-bottom:14px;font-size:1.03rem}
+
+  /* Menu cards */
+  .grid{display:grid;grid-template-columns:1fr;gap:16px}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+  @media(min-width:920px){.grid{grid-template-columns:1fr 1fr 1fr}}
+  .card{background:var(--card);border-radius:16px;padding:22px;box-shadow:0 4px 18px rgba(31,70,48,.09);border-top:4px solid var(--green2)}
+  .card .ico{font-size:1.6rem;margin-bottom:8px}
+  .card h3{font-size:1.08rem;color:var(--green);margin-bottom:5px}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(min-width:920px){.gallery{grid-template-columns:1fr 1fr 1fr}}
+  .gallery img{width:100%;height:210px;object-fit:cover;border-radius:14px}
+  @media(min-width:920px){.gallery img{height:240px}}
+
+  /* Hours */
+  .hours-card{background:var(--card);border-radius:16px;box-shadow:0 4px 18px rgba(31,70,48,.09);overflow:hidden;max-width:560px}
+  table{width:100%;border-collapse:collapse}
+  td{padding:12px 18px;border-bottom:1px solid #eee7d8;font-size:.98rem}
+  tr:last-child td{border-bottom:none}
+  td:last-child{text-align:right;font-weight:600;color:var(--green)}
+  .today td{background:#f1f7ee}
+
+  /* Visit */
+  .visit{display:grid;grid-template-columns:1fr;gap:20px}
+  @media(min-width:820px){.visit{grid-template-columns:1fr 1.3fr}}
+  .visit .info{background:var(--green);color:#eaf2e6;border-radius:16px;padding:26px}
+  .visit .info h3{color:#fff;font-family:Georgia,serif;font-size:1.3rem;margin-bottom:12px}
+  .visit .info p{margin-bottom:12px;font-size:.98rem}
+  .visit .info a{color:var(--gold);font-weight:700}
+  iframe{width:100%;height:100%;min-height:300px;border:0;border-radius:16px}
+
+  /* CTA */
+  .cta{background:linear-gradient(120deg,var(--green),var(--green2));color:#fff;text-align:center;padding:46px 18px}
+  .cta h2{color:#fff}
+  .cta p{color:#dcead6;margin:8px auto 22px;max-width:520px}
+  .cta .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn-ig{background:#fff;color:var(--green)}
+
+  footer{background:#142a1c;color:#9db8a2;text-align:center;padding:26px 18px;font-size:.88rem}
+  footer strong{color:#e7efe2}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <div class="brand">MOKAI<small>CAFE · PALI HILL</small></div>
+    <a class="call-btn" href="tel:+919820983607">📞 Call Now</a>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Matcha_tea_latte_with_rosetta_latte_art.jpg/1280px-Matcha_tea_latte_with_rosetta_latte_art.jpg" alt="Matcha latte with latte art at Mokai Cafe">
+  <div class="shade"></div>
+  <div class="content">
+    <h1>Mokai Cafe</h1>
+    <p class="tag">Matcha, sandos &amp; Asian-fusion plates in the heart of Pali Hill, Bandra.</p>
+    <span class="badge">★ 4.3 · 1,700+ Google reviews</span>
+    <div class="actions">
+      <a class="btn btn-solid" href="tel:+919820983607">Call the Cafe</a>
+      <a class="btn btn-ghost" href="#menu">See Menu Highlights</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <div class="wrap">
+    <h2>About Mokai</h2>
+    <p>Mokai Cafe sits on Dr Ambedkar Road in Pali Hill, Bandra West. The menu leans Asian-fusion — Japanese, Thai and Singaporean influences — with ceremonial-grade matcha and hand-crafted sandos at its centre.</p>
+    <p>Open every day from 8:00 in the morning to 11:30 at night, it is an easy stop for a slow breakfast, a working lunch, or a late-evening coffee.</p>
+  </div>
+</section>
+
+<section id="menu" style="padding-top:0">
+  <div class="wrap">
+    <h2>Menu Highlights</h2>
+    <p class="sub">The plates and pours Mokai is known for.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🍵</div><h3>Matcha Latte</h3><p>Ceremonial-grade matcha whisked smooth into steamed milk.</p></div>
+      <div class="card"><div class="ico">🥪</div><h3>Katsu Chicken Sando</h3><p>Crisp chicken katsu layered inside soft Japanese-style sandwich bread.</p></div>
+      <div class="card"><div class="ico">🥟</div><h3>Peanuty Satay Wontons</h3><p>Delicate wontons served with a rich peanut satay sauce.</p></div>
+      <div class="card"><div class="ico">🍄</div><h3>3-Mushroom Truffle Sando</h3><p>Three mushrooms with a touch of truffle, toasted into a hearty sando.</p></div>
+      <div class="card"><div class="ico">🥭</div><h3>Mango-Matcha Smoothie Bowl</h3><p>Mango and matcha blended thick and finished with fresh toppings.</p></div>
+      <div class="card"><div class="ico">🍰</div><h3>Mokai-style Tiramisu</h3><p>The classic coffee-soaked Italian dessert, done the Mokai way.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Gallery</h2>
+    <p class="sub">A taste of what's on the table.</p>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Matcha_Green_Tea_Latte_%2835487991553%29.jpg/1280px-Matcha_Green_Tea_Latte_%2835487991553%29.jpg" alt="Freshly whisked matcha green tea" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/KatsuSando.jpg/1280px-KatsuSando.jpg" alt="Katsu sando served Japanese style" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Katsu_sando_%2837686169334%29.jpg/1280px-Katsu_sando_%2837686169334%29.jpg" alt="Thick-cut katsu sandwich" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Smoothie_bowlin_%28Unsplash%29.jpg/1280px-Smoothie_bowlin_%28Unsplash%29.jpg" alt="Smoothie bowl with coconut and cacao nibs" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Tiramisu_dessert.jpg/1280px-Tiramisu_dessert.jpg" alt="A slice of tiramisu" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Opening Hours</h2>
+    <p class="sub">Open every day of the week.</p>
+    <div class="hours-card">
+      <table>
+        <tr><td>Monday</td><td>8:00 AM – 11:30 PM</td></tr>
+        <tr><td>Tuesday</td><td>8:00 AM – 11:30 PM</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM – 11:30 PM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM – 11:30 PM</td></tr>
+        <tr><td>Friday</td><td>8:00 AM – 11:30 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM – 11:30 PM</td></tr>
+        <tr><td>Sunday</td><td>8:00 AM – 11:30 PM</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Visit Us</h2>
+    <p class="sub">Find us in Pali Hill, Bandra West.</p>
+    <div class="visit">
+      <div class="info">
+        <h3>Mokai Cafe</h3>
+        <p>📍 600–602, Hill Crest Building, Dr Ambedkar Road, Pali Hill, Bandra West, Mumbai 400050</p>
+        <p>📞 <a href="tel:+919820983607">+91 98209 83607</a></p>
+        <p>🕗 Open daily · 8:00 AM – 11:30 PM</p>
+        <p>📸 <a href="https://www.instagram.com/mokaiindia" target="_blank" rel="noopener">@mokaiindia on Instagram</a></p>
+      </div>
+      <iframe title="Map — Mokai Cafe, Pali Hill, Bandra West" src="https://www.google.com/maps?q=Mokai%20Cafe%2C%20600-602%20Hill%20Crest%20Building%2C%20Dr%20Ambedkar%20Road%2C%20Pali%20Hill%2C%20Bandra%20West%2C%20Mumbai%20400050&output=embed" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Craving a matcha break?</h2>
+  <p>Call ahead or just walk in — we're open every day till 11:30 PM.</p>
+  <div class="actions">
+    <a class="btn btn-solid" href="tel:+919820983607">📞 +91 98209 83607</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/mokaiindia" target="_blank" rel="noopener">Follow @mokaiindia</a>
+  </div>
+</div>
+
+<footer>
+  <strong>Mokai Cafe</strong> · Pali Hill, Bandra West, Mumbai<br>
+  Open daily 8:00 AM – 11:30 PM
+</footer>
+
+</body>
+</html>

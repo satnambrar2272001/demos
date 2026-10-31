@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beany Barista — Pakhowal Road, Ludhiana | Coffee, Brownies & Grills</title>
+<meta name="description" content="Beany Barista on Pakhowal Road, Ludhiana — caramel & hazelnut lattes, frappes, walnut brownies, grilled sandwiches, paninis and thick milkshakes. Open daily 10:00 AM – 10:00 PM.">
+<meta property="og:title" content="Beany Barista — Pakhowal Road, Ludhiana">
+<meta property="og:description" content="Fresh-poured lattes, fudgy walnut brownies & grilled favourites. Rated 4.5 on Google with 134 reviews. Open daily 10:00 AM – 10:00 PM.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/beany-barista/">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Latte_art_4.jpg/1280px-Latte_art_4.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --rust:#7c3f14; --rust2:#a35a1d; --cream:#fdf7ef; --ink:#33241a;
+    --caramel:#d98e4a; --card:#ffffff; --muted:#77614f;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+  img{display:block;max-width:100%}
+  a{text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+  header{position:sticky;top:0;z-index:50;background:var(--rust);box-shadow:0 2px 12px rgba(0,0,0,.25)}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;max-width:1080px;margin:0 auto}
+  .brand{color:#fff;font-size:1.3rem;font-weight:800;letter-spacing:.03em}
+  .brand small{display:block;font-size:.62rem;letter-spacing:.28em;color:#f3c98d;font-weight:700}
+  .call-btn{background:var(--caramel);color:#2e1a03;font-weight:700;padding:9px 16px;border-radius:999px;font-size:.9rem;white-space:nowrap}
+  .call-btn:active{transform:scale(.97)}
+
+  .hero{position:relative;color:#fff}
+  .hero img{width:100%;height:62vh;min-height:380px;object-fit:cover}
+  .hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,22,4,.22),rgba(43,22,4,.85))}
+  .hero .content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:28px 18px 34px;max-width:1080px;margin:0 auto;width:100%}
+  .hero h1{font-size:2.5rem;line-height:1.1;font-weight:800}
+  .hero p.tag{font-size:1.06rem;margin-top:8px;color:#f7e7cf;max-width:560px}
+  .badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:#8a5a14;font-weight:700;padding:6px 14px;border-radius:999px;font-size:.9rem;margin-top:16px;width:fit-content}
+  .hero .actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{padding:12px 22px;border-radius:999px;font-weight:700;font-size:.95rem}
+  .btn-solid{background:var(--caramel);color:#2e1a03}
+  .btn-ghost{border:2px solid #fff;color:#fff}
+
+  section{padding:52px 0}
+  h2{font-size:1.85rem;color:var(--rust);margin-bottom:8px;font-weight:800}
+  .sub{color:var(--muted);margin-bottom:26px;max-width:640px}
+  .about p{max-width:720px;margin-bottom:14px;font-size:1.03rem}
+
+  .grid{display:grid;grid-template-columns:1fr;gap:16px}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+  @media(min-width:920px){.grid{grid-template-columns:1fr 1fr 1fr}}
+  .card{background:var(--card);border-radius:16px;padding:22px;box-shadow:0 4px 18px rgba(124,63,20,.10);border-top:4px solid var(--rust2)}
+  .card .ico{font-size:1.6rem;margin-bottom:8px}
+  .card h3{font-size:1.08rem;color:var(--rust);margin-bottom:5px}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(min-width:920px){.gallery{grid-template-columns:1fr 1fr 1fr}}
+  .gallery img{width:100%;height:210px;object-fit:cover;border-radius:14px}
+  @media(min-width:920px){.gallery img{height:240px}}
+
+  .hours-card{background:var(--card);border-radius:16px;box-shadow:0 4px 18px rgba(124,63,20,.10);overflow:hidden;max-width:560px}
+  table{width:100%;border-collapse:collapse}
+  td{padding:12px 18px;border-bottom:1px solid #f0e3d2;font-size:.98rem}
+  tr:last-child td{border-bottom:none}
+  td:last-child{text-align:right;font-weight:600;color:var(--rust)}
+
+  .visit{display:grid;grid-template-columns:1fr;gap:20px}
+  @media(min-width:820px){.visit{grid-template-columns:1fr 1.3fr}}
+  .visit .info{background:var(--rust);color:#f6e8d8;border-radius:16px;padding:26px}
+  .visit .info h3{color:#fff;font-size:1.3rem;margin-bottom:12px}
+  .visit .info p{margin-bottom:12px;font-size:.98rem}
+  .visit .info a{color:#f3c98d;font-weight:700}
+  iframe{width:100%;height:100%;min-height:300px;border:0;border-radius:16px}
+
+  .cta{background:linear-gradient(120deg,var(--rust),var(--rust2));color:#fff;text-align:center;padding:46px 18px}
+  .cta h2{color:#fff}
+  .cta p{color:#f0ddc4;margin:8px auto 22px;max-width:520px}
+  .cta .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn-ig{background:#fff;color:var(--rust)}
+
+  footer{background:#4a2508;color:#cfa87e;text-align:center;padding:26px 18px;font-size:.88rem}
+  footer strong{color:#f3e3cd}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <div class="brand">BEANY BARISTA<small>COFFEE · BAKES · GRILLS</small></div>
+    <a class="call-btn" href="tel:+918427673939">📞 Call Now</a>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Latte_art_4.jpg/1280px-Latte_art_4.jpg" alt="Latte with hand-poured latte art at Beany Barista">
+  <div class="shade"></div>
+  <div class="content">
+    <h1>Beany Barista</h1>
+    <p class="tag">Fresh-poured lattes, fudgy brownies &amp; grilled favourites on Pakhowal Road, Ludhiana.</p>
+    <span class="badge">★ 4.5 · 134 Google reviews</span>
+    <div class="actions">
+      <a class="btn btn-solid" href="tel:+918427673939">Call the Cafe</a>
+      <a class="btn btn-ghost" href="#menu">See Menu Highlights</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <div class="wrap">
+    <h2>About Beany Barista</h2>
+    <p>Beany Barista is a cosy neighbourhood coffee stop on Pakhowal Road in Sant Ishar Singh Nagar, Ludhiana — the kind of place where the coffee is poured fresh and the brownies come out fudgy.</p>
+    <p>The counter serves caramel and hazelnut lattes, iced Americanos, frappes and mochas, with walnut brownies, grilled sandwiches, paninis and thick milkshakes alongside. Open every day, 10:00 AM to 10:00 PM.</p>
+  </div>
+</section>
+
+<section id="menu" style="padding-top:0">
+  <div class="wrap">
+    <h2>Menu Highlights</h2>
+    <p class="sub">Coffees, coolers and cafe classics.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">☕</div><h3>Caramel &amp; Hazelnut Lattes</h3><p>Smooth espresso lattes with your pick of caramel or hazelnut.</p></div>
+      <div class="card"><div class="ico">🧊</div><h3>Iced Americano</h3><p>Bold, black and ice-cold — the cleanest way to cool down.</p></div>
+      <div class="card"><div class="ico">🥤</div><h3>Frappe &amp; Mocha</h3><p>Blended frappes and chocolate-kissed mochas, hot or cold.</p></div>
+      <div class="card"><div class="ico">🍫</div><h3>Walnut Brownie</h3><p>Rich, fudgy chocolate brownie studded with walnuts.</p></div>
+      <div class="card"><div class="ico">🥪</div><h3>Grilled Sandwiches &amp; Paninis</h3><p>Toasted golden and filled generously — a cafe staple done right.</p></div>
+      <div class="card"><div class="ico">🍹</div><h3>Shakes &amp; Virgin Mojitos</h3><p>Oreo and double-chocolate milkshakes, plus minty virgin mojitos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Gallery</h2>
+    <p class="sub">Poured, baked and grilled fresh.</p>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Latte_art_3.jpg/1280px-Latte_art_3.jpg" alt="Milk being poured into a latte" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Coppa_Cafe_Latte_art%2C_Brisbane%2C_Queensland.jpg/1280px-Coppa_Cafe_Latte_art%2C_Brisbane%2C_Queensland.jpg" alt="Mocha with cocoa art in a green cup" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Chocolate_Brownie_Decorated.jpg/1280px-Chocolate_Brownie_Decorated.jpg" alt="Chocolate brownies with ganache and a cherry" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Panini_sandwich_in_a_restaurant.JPG" alt="Grilled panini with peppers and cheese" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Grilled_cheese_sandwich_on_white_plate.jpg/1280px-Grilled_cheese_sandwich_on_white_plate.jpg" alt="Golden grilled cheese sandwich" loading="lazy">
+      <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Chocolate_Milkshake_%2851513436940%29.jpg/1280px-Chocolate_Milkshake_%2851513436940%29.jpg" alt="Oreo milkshake with whipped cream in a mason jar" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Opening Hours</h2>
+    <p class="sub">Open every day of the week.</p>
+    <div class="hours-card">
+      <table>
+        <tr><td>Monday</td><td>10:00 AM – 10:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>10:00 AM – 10:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>10:00 AM – 10:00 PM</td></tr>
+        <tr><td>Thursday</td><td>10:00 AM – 10:00 PM</td></tr>
+        <tr><td>Friday</td><td>10:00 AM – 10:00 PM</td></tr>
+        <tr><td>Saturday</td><td>10:00 AM – 10:00 PM</td></tr>
+        <tr><td>Sunday</td><td>10:00 AM – 10:00 PM</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Visit Us</h2>
+    <p class="sub">On Pakhowal Road, Ludhiana.</p>
+    <div class="visit">
+      <div class="info">
+        <h3>Beany Barista</h3>
+        <p>📍 Flat No. 2, Ground Floor, Pakhowal Road, Sant Ishar Singh Nagar, Ludhiana, Punjab 141001</p>
+        <p>📞 <a href="tel:+918427673939">+91 84276 73939</a></p>
+        <p>🕙 Open daily · 10:00 AM – 10:00 PM</p>
+        <p>📸 <a href="https://www.instagram.com/beany.barista" target="_blank" rel="noopener">@beany.barista on Instagram</a></p>
+      </div>
+      <iframe title="Map — Beany Barista, Pakhowal Road, Ludhiana" src="https://www.google.com/maps?q=Beany%20Barista%2C%20Flat%20No.2%2C%20Ground%20Floor%2C%20Pakhowal%20Road%2C%20Sant%20Ishar%20Singh%20Nagar%2C%20Ludhiana%2C%20Punjab%20141001&output=embed" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Coffee o'clock in Ludhiana?</h2>
+  <p>Call ahead or walk in — we're pouring from 10 AM to 10 PM, every day.</p>
+  <div class="actions">
+    <a class="btn btn-solid" href="tel:+918427673939">📞 +91 84276 73939</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/beany.barista" target="_blank" rel="noopener">Follow @beany.barista</a>
+  </div>
+</div>
+
+<footer>
+  <strong>Beany Barista</strong> · Pakhowal Road, Ludhiana, Punjab<br>
+  Open daily 10:00 AM – 10:00 PM
+</footer>
+
+</body>
+</html>

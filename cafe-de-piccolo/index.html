@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café De Piccolo — Sector 9, Chandigarh</title>
+<meta name="description" content="Café De Piccolo, Sector 9, Chandigarh — Italian pastas, thin-crust pizzas, English breakfast, banoffee pie and Nutella cheesecake. Open daily 11 AM – 10:30 PM.">
+<meta property="og:title" content="Café De Piccolo — Sector 9, Chandigarh">
+<meta property="og:description" content="Italian pastas, thin-crust pizzas, English breakfast, banoffee pie & Nutella cheesecake on Madhya Marg. ★ 4.6 · 892 Google reviews. Open daily 11 AM – 10:30 PM.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/cafe-de-piccolo/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Pork_tagliatelle_pasta_dish_at_restaurant_in_Rome%2C_Italy.jpg/1280px-Pork_tagliatelle_pasta_dish_at_restaurant_in_Rome%2C_Italy.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --red:#b91c1c; --red-dark:#7f1d1d; --green:#15803d; --cream:#fffbeb;
+    --ink:#292524; --muted:#78716c;
+  }
+  body{ font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; }
+  img{ max-width:100%; display:block; }
+  a{ text-decoration:none; }
+
+  header{ position:sticky; top:0; z-index:50; background:rgba(127,29,29,.97); color:#fff;
+    display:flex; align-items:center; justify-content:space-between; padding:.7rem 1rem;
+    box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  .brand{ font-size:1.2rem; font-weight:800; letter-spacing:.4px; }
+  .brand span{ color:#fcd34d; }
+  .call-btn{ background:var(--green); color:#fff; font-weight:700; padding:.55rem 1rem; border-radius:999px; font-size:.95rem; white-space:nowrap; }
+  .call-btn:active{ transform:scale(.97); }
+
+  .hero{ position:relative; color:#fff; text-align:center; }
+  .hero img{ width:100%; height:62vh; min-height:340px; object-fit:cover; }
+  .hero-overlay{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(127,29,29,.30),rgba(69,10,10,.88));
+    display:flex; flex-direction:column; justify-content:flex-end; align-items:center; padding:2rem 1.2rem 2.4rem; }
+  .hero h1{ font-size:2.5rem; line-height:1.1; text-shadow:0 2px 12px rgba(0,0,0,.4); }
+  .hero p.tag{ font-size:1.1rem; margin-top:.5rem; color:#fee2e2; }
+  .badge{ display:inline-block; margin-top:1rem; background:#fff; color:var(--red-dark); font-weight:700;
+    padding:.4rem 1rem; border-radius:999px; font-size:.95rem; box-shadow:0 4px 14px rgba(0,0,0,.3); }
+  .badge .star{ color:#f59e0b; }
+  .hero-cta{ margin-top:1.2rem; display:flex; gap:.6rem; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:.7rem 1.4rem; border-radius:999px; font-weight:700; }
+  .btn-call{ background:var(--green); color:#fff; }
+  .btn-ig{ background:#fff; color:var(--red-dark); }
+
+  section{ padding:3rem 1.2rem; max-width:1080px; margin:0 auto; }
+  h2{ font-size:1.8rem; text-align:center; color:var(--red-dark); margin-bottom:.4rem; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:2rem; }
+  .about p{ max-width:720px; margin:0 auto 1rem; text-align:center; font-size:1.05rem; }
+
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
+  .card{ background:#fff; border-radius:16px; padding:1.4rem 1.2rem; text-align:center;
+    box-shadow:0 4px 16px rgba(127,29,29,.10); border-top:5px solid var(--red); }
+  .card .icon{ font-size:2rem; }
+  .card h3{ margin:.5rem 0 .3rem; font-size:1.08rem; color:var(--red-dark); }
+  .card p{ color:var(--muted); font-size:.93rem; }
+
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.8rem; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.15); }
+
+  .hours-wrap{ max-width:520px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(127,29,29,.10); }
+  table{ width:100%; border-collapse:collapse; }
+  td{ padding:.8rem 1.2rem; border-bottom:1px solid #fee2e2; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--red-dark); }
+
+  .visit{ text-align:center; }
+  .visit address{ font-style:normal; font-size:1.05rem; margin-bottom:1.2rem; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,.15); }
+
+  .cta-band{ background:linear-gradient(120deg,var(--red),var(--red-dark)); color:#fff; text-align:center; padding:2.6rem 1.2rem; }
+  .cta-band h2{ color:#fff; }
+  .cta-band p{ color:#fecaca; margin-bottom:1.4rem; }
+
+  footer{ background:#450a0a; color:#fca5a5; text-align:center; padding:1.4rem 1rem; font-size:.9rem; }
+  footer a{ color:#fcd34d; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Café De <span>Piccolo</span></div>
+  <a class="call-btn" href="tel:+918393936263">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Pork_tagliatelle_pasta_dish_at_restaurant_in_Rome%2C_Italy.jpg/1280px-Pork_tagliatelle_pasta_dish_at_restaurant_in_Rome%2C_Italy.jpg" alt="Italian pasta at Café De Piccolo">
+  <div class="hero-overlay">
+    <h1>Café De Piccolo</h1>
+    <p class="tag">A little taste of Italy — in the heart of Sector 9, Chandigarh</p>
+    <div class="badge"><span class="star">★</span> 4.6 · 892 Google reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-call" href="tel:+918393936263">📞 +91 83939 36263</a>
+      <a class="btn btn-ig" href="https://www.instagram.com/cafedepiccolo" target="_blank" rel="noopener">📸 @cafedepiccolo</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p class="sub">Italian flavours on Madhya Marg</p>
+  <p>Café De Piccolo brings Italian cafe classics to Madhya Marg in Sector 9-D, Chandigarh — from vodka-sauce pasta and baked chicken lasagna to thin-crust pizzas fresh from the oven.</p>
+  <p>Start the day with an English breakfast, or finish on a sweet note with banoffee pie and Nutella cheesecake, paired with speciality coffee or a mug of hot chocolate. We are open every day from 11 AM to 10:30 PM.</p>
+</section>
+
+<section>
+  <h2>Menu Highlights</h2>
+  <p class="sub">Italian favourites, made fresh every day</p>
+  <div class="cards">
+    <div class="card"><div class="icon">🍝</div><h3>Italian Pastas</h3><p>Classic Italian pastas, including our vodka-sauce pasta and baked chicken lasagna.</p></div>
+    <div class="card"><div class="icon">🍕</div><h3>Thin-Crust Pizzas</h3><p>Crisp, thin-crust pizzas with fresh toppings — straight from the oven to your table.</p></div>
+    <div class="card"><div class="icon">🍳</div><h3>English Breakfast</h3><p>A hearty English breakfast to start your day the right way.</p></div>
+    <div class="card"><div class="icon">🥧</div><h3>Banoffee Pie</h3><p>Layers of banana, toffee and cream — our much-loved banoffee pie.</p></div>
+    <div class="card"><div class="icon">🍰</div><h3>Nutella Cheesecake</h3><p>Rich, creamy Nutella cheesecake for the perfect sweet ending.</p></div>
+    <div class="card"><div class="icon">☕</div><h3>Speciality Coffee &amp; Hot Chocolate</h3><p>Speciality coffee brewed to order, and indulgent hot chocolate for cosy evenings.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Fresh from the Piccolo kitchen</p>
+  <div class="gallery">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Margherita_pizza_on_plate.jpg/1280px-Margherita_pizza_on_plate.jpg" alt="Thin-crust pizza">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Lasagna_Indian_style.jpg/1280px-Lasagna_Indian_style.jpg" alt="Baked lasagna">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Banoffee_pie_-_Enzo%27s_2026-04-21.jpg/1280px-Banoffee_pie_-_Enzo%27s_2026-04-21.jpg" alt="Banoffee pie">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/1280px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Cheesecake with strawberry sauce">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Full_English_Breakfast.JPG/1280px-Full_English_Breakfast.JPG" alt="English breakfast plate">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Dark_Hot_Chocolate%2C_San_Churro_Leederville%2C_2026_%2802%29.jpg/1280px-Dark_Hot_Chocolate%2C_San_Churro_Leederville%2C_2026_%2802%29.jpg" alt="Hot chocolate">
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Open every day</p>
+  <div class="hours-wrap">
+    <table>
+      <tr><td>Monday</td><td>11:00 AM – 10:30 PM</td></tr>
+      <tr><td>Tuesday</td><td>11:00 AM – 10:30 PM</td></tr>
+      <tr><td>Wednesday</td><td>11:00 AM – 10:30 PM</td></tr>
+      <tr><td>Thursday</td><td>11:00 AM – 10:30 PM</td></tr>
+      <tr><td>Friday</td><td>11:00 AM – 10:30 PM</td></tr>
+      <tr><td>Saturday</td><td>11:00 AM – 10:30 PM</td></tr>
+      <tr><td>Sunday</td><td>11:00 AM – 10:30 PM</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p class="sub">Find us on Madhya Marg</p>
+  <address>SCO 61-62-63, Madhya Marg, Sector 9-D,<br>Chandigarh 160009</address>
+  <iframe class="map" loading="lazy" title="Café De Piccolo location map"
+    src="https://www.google.com/maps?q=Caf%C3%A9%20De%20Piccolo%2C%20SCO%2061-62-63%2C%20Madhya%20Marg%2C%20Sector%209-D%2C%20Chandigarh%20160009&output=embed"></iframe>
+</section>
+
+<div class="cta-band">
+  <h2>Craving Italian?</h2>
+  <p>Call us to book your table, or follow us on Instagram for the latest from the cafe.</p>
+  <div class="hero-cta">
+    <a class="btn btn-call" href="tel:+918393936263">📞 Call +91 83939 36263</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/cafedepiccolo" target="_blank" rel="noopener">📸 Follow @cafedepiccolo</a>
+  </div>
+</div>
+
+<footer>
+  © Café De Piccolo · SCO 61-62-63, Madhya Marg, Sector 9-D, Chandigarh 160009 · <a href="tel:+918393936263">+91 83939 36263</a>
+</footer>
+
+</body>
+</html>

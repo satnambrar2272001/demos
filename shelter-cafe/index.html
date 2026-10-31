@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shelter Cafe x Coffee by Javaphile — Carter Road, Bandra West</title>
+<meta name="description" content="Shelter Cafe x Coffee by Javaphile, off Carter Road, Bandra West — signature hot chocolate, iced coffees, sourdough pizzas and smoothie bowls. Open daily 8:00 AM – 11:00 PM.">
+<meta property="og:title" content="Shelter Cafe x Coffee by Javaphile — Bandra West">
+<meta property="og:description" content="Slow coffee, signature hot chocolate & sourdough pizzas off Carter Road. Rated 4.3 on Google. Open daily 8:00 AM – 11:00 PM.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/shelter-cafe/">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Hot_chocolate_%281%29.jpg/1280px-Hot_chocolate_%281%29.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --teal:#0e4a4a; --teal2:#146666; --sand:#f7f1e6; --ink:#243332;
+    --amber:#e0a458; --card:#ffffff; --muted:#5f6f6d;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--sand);color:var(--ink);line-height:1.6}
+  img{display:block;max-width:100%}
+  a{text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+  header{position:sticky;top:0;z-index:50;background:var(--teal);box-shadow:0 2px 12px rgba(0,0,0,.25)}
+  .bar{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;max-width:1080px;margin:0 auto;gap:10px}
+  .brand{color:#fff;font-size:1.25rem;font-weight:800;letter-spacing:.04em}
+  .brand small{display:block;font-size:.62rem;letter-spacing:.26em;color:var(--amber);font-weight:700}
+  .call-btn{background:var(--amber);color:#2e1d04;font-weight:700;padding:9px 16px;border-radius:999px;font-size:.9rem;white-space:nowrap}
+  .call-btn:active{transform:scale(.97)}
+
+  .hero{position:relative;color:#fff}
+  .hero img{width:100%;height:62vh;min-height:380px;object-fit:cover}
+  .hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,32,32,.22),rgba(6,32,32,.85))}
+  .hero .content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:28px 18px 34px;max-width:1080px;margin:0 auto;width:100%}
+  .hero h1{font-size:2.35rem;line-height:1.12;font-weight:800}
+  .hero p.tag{font-size:1.06rem;margin-top:8px;color:#f5e8d2;max-width:560px}
+  .badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:#8a5a14;font-weight:700;padding:6px 14px;border-radius:999px;font-size:.9rem;margin-top:16px;width:fit-content}
+  .hero .actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{padding:12px 22px;border-radius:999px;font-weight:700;font-size:.95rem}
+  .btn-solid{background:var(--amber);color:#2e1d04}
+  .btn-ghost{border:2px solid #fff;color:#fff}
+
+  section{padding:52px 0}
+  h2{font-size:1.85rem;color:var(--teal);margin-bottom:8px;font-weight:800}
+  .sub{color:var(--muted);margin-bottom:26px;max-width:640px}
+  .about p{max-width:720px;margin-bottom:14px;font-size:1.03rem}
+
+  .grid{display:grid;grid-template-columns:1fr;gap:16px}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+  @media(min-width:920px){.grid{grid-template-columns:1fr 1fr 1fr}}
+  .card{background:var(--card);border-radius:16px;padding:22px;box-shadow:0 4px 18px rgba(14,74,74,.10);border-top:4px solid var(--teal2)}
+  .card .ico{font-size:1.6rem;margin-bottom:8px}
+  .card h3{font-size:1.08rem;color:var(--teal);margin-bottom:5px}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(min-width:920px){.gallery{grid-template-columns:1fr 1fr 1fr}}
+  .gallery img{width:100%;height:210px;object-fit:cover;border-radius:14px}
+  @media(min-width:920px){.gallery img{height:240px}}
+
+  .hours-card{background:var(--card);border-radius:16px;box-shadow:0 4px 18px rgba(14,74,74,.10);overflow:hidden;max-width:560px}
+  table{width:100%;border-collapse:collapse}
+  td{padding:12px 18px;border-bottom:1px solid #eee3d2;font-size:.98rem}
+  tr:last-child td{border-bottom:none}
+  td:last-child{text-align:right;font-weight:600;color:var(--teal)}
+
+  .visit{display:grid;grid-template-columns:1fr;gap:20px}
+  @media(min-width:820px){.visit{grid-template-columns:1fr 1.3fr}}
+  .visit .info{background:var(--teal);color:#dff0ee;border-radius:16px;padding:26px}
+  .visit .info h3{color:#fff;font-size:1.3rem;margin-bottom:12px}
+  .visit .info p{margin-bottom:12px;font-size:.98rem}
+  .visit .info a{color:var(--amber);font-weight:700}
+  iframe{width:100%;height:100%;min-height:300px;border:0;border-radius:16px}
+
+  .cta{background:linear-gradient(120deg,var(--teal),var(--teal2));color:#fff;text-align:center;padding:46px 18px}
+  .cta h2{color:#fff}
+  .cta p{color:#d5e8e5;margin:8px auto 22px;max-width:520px}
+  .cta .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn-ig{background:#fff;color:var(--teal)}
+
+  footer{background:#082e2e;color:#93b3ae;text-align:center;padding:26px 18px;font-size:.88rem}
+  footer strong{color:#e4efed}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <div class="brand">SHELTER CAFE<small>X COFFEE BY JAVAPHILE</small></div>
+    <a class="call-btn" href="tel:+919152000452">📞 Call Now</a>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Hot_chocolate_%281%29.jpg/1280px-Hot_chocolate_%281%29.jpg" alt="Signature hot chocolate with latte art at Shelter Cafe">
+  <div class="shade"></div>
+  <div class="content">
+    <h1>Shelter Cafe x Coffee by Javaphile</h1>
+    <p class="tag">Slow coffee, signature hot chocolate &amp; sourdough pizzas — a calm corner off Carter Road.</p>
+    <span class="badge">★ 4.3 · Rated on Google</span>
+    <div class="actions">
+      <a class="btn btn-solid" href="tel:+919152000452">Call the Cafe</a>
+      <a class="btn btn-ghost" href="#menu">See Menu Highlights</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <div class="wrap">
+    <h2>About Shelter</h2>
+    <p>Shelter Cafe x Coffee by Javaphile is tucked into Noorie House on Sherly Rajan Road, just off Carter Road in Bandra West — an easy-going spot built around good coffee.</p>
+    <p>From iced cortados to the signature hot chocolate, with sourdough pizzas and smoothie bowls served through the day, it's open daily from 8:00 in the morning to 11:00 at night.</p>
+  </div>
+</section>
+
+<section id="menu" style="padding-top:0">
+  <div class="wrap">
+    <h2>Menu Highlights</h2>
+    <p class="sub">Coffee first, comfort food close behind.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">☕</div><h3>Signature Hot Chocolate</h3><p>Rich and thick, finished with latte art — the cup Shelter is known for.</p></div>
+      <div class="card"><div class="ico">🧊</div><h3>Iced Cortado</h3><p>A short, strong espresso cut with cold milk and served over ice.</p></div>
+      <div class="card"><div class="ico">🥤</div><h3>Caramel Iced Latte</h3><p>Chilled, milky and smooth, with a gentle caramel finish.</p></div>
+      <div class="card"><div class="ico">🍕</div><h3>Sourdough Pizzas</h3><p>Slow-fermented, airy crusts baked fresh with generous toppings.</p></div>
+      <div class="card"><div class="ico">🍓</div><h3>Smoothie Bowls</h3><p>Thick-blended fruit bowls topped with fresh fruit and crunch.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Gallery</h2>
+    <p class="sub">From the counter to your table.</p>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Iced_latte_-_Trading_Post_Coffee_Roasters_2024-06-21.jpg/1280px-Iced_latte_-_Trading_Post_Coffee_Roasters_2024-06-21.jpg" alt="Iced latte on a cafe terrace" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Sourdough_pizza.jpg/1280px-Sourdough_pizza.jpg" alt="Sourdough pizza close-up" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Psychic_Pie_-_May_2022_-_Sarah_Stierch_16.jpg/1280px-Psychic_Pie_-_May_2022_-_Sarah_Stierch_16.jpg" alt="A slice of sourdough pizza with an airy crust" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Smoothie_bowl.jpg/1280px-Smoothie_bowl.jpg" alt="Smoothie bowl with berries, kiwi and banana" loading="lazy">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Hot_Chocolate_in_December.jpg/1280px-Hot_Chocolate_in_December.jpg" alt="A warm cup of hot chocolate" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Opening Hours</h2>
+    <p class="sub">Open every day of the week.</p>
+    <div class="hours-card">
+      <table>
+        <tr><td>Monday</td><td>8:00 AM – 11:00 PM</td></tr>
+        <tr><td>Tuesday</td><td>8:00 AM – 11:00 PM</td></tr>
+        <tr><td>Wednesday</td><td>8:00 AM – 11:00 PM</td></tr>
+        <tr><td>Thursday</td><td>8:00 AM – 11:00 PM</td></tr>
+        <tr><td>Friday</td><td>8:00 AM – 11:00 PM</td></tr>
+        <tr><td>Saturday</td><td>8:00 AM – 11:00 PM</td></tr>
+        <tr><td>Sunday</td><td>8:00 AM – 11:00 PM</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Visit Us</h2>
+    <p class="sub">Just off Carter Road, Bandra West.</p>
+    <div class="visit">
+      <div class="info">
+        <h3>Shelter Cafe x Coffee by Javaphile</h3>
+        <p>📍 Noorie House, 4 Sherly Rajan Road, off Carter Road, Bandra West, Mumbai 400050</p>
+        <p>📞 <a href="tel:+919152000452">+91 91520 00452</a></p>
+        <p>🕗 Open daily · 8:00 AM – 11:00 PM</p>
+        <p>📸 <a href="https://www.instagram.com/sheltercafe.mumbai" target="_blank" rel="noopener">@sheltercafe.mumbai on Instagram</a></p>
+      </div>
+      <iframe title="Map — Shelter Cafe, off Carter Road, Bandra West" src="https://www.google.com/maps?q=Shelter%20Cafe%20x%20Coffee%20by%20Javaphile%2C%20Noorie%20House%2C%204%20Sherly%20Rajan%20Road%2C%20off%20Carter%20Road%2C%20Bandra%20West%2C%20Mumbai%20400050&output=embed" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Your table is waiting</h2>
+  <p>Call ahead or drop by — coffee is on from 8 AM, every single day.</p>
+  <div class="actions">
+    <a class="btn btn-solid" href="tel:+919152000452">📞 +91 91520 00452</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/sheltercafe.mumbai" target="_blank" rel="noopener">Follow @sheltercafe.mumbai</a>
+  </div>
+</div>
+
+<footer>
+  <strong>Shelter Cafe x Coffee by Javaphile</strong> · Off Carter Road, Bandra West, Mumbai<br>
+  Open daily 8:00 AM – 11:00 PM
+</footer>
+
+</body>
+</html>
