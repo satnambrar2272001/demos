@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Salon — Hobart TAS</title>
+<meta name="description" content="Red Salon, Level 3/29 Elizabeth St, Hobart — blonde specialists, balayage, Wella colour, keratin treatments, extensions, weddings & makeup. Open Mon–Sat.">
+<meta property="og:title" content="Red Salon — Hobart TAS">
+<meta property="og:description" content="Blonde, balayage & Wella colour specialists in Hobart's CBD. ★ 4.8 · 70 Google reviews. Open Mon–Sat.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/red-salon/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Ombre_Hair_%28Unsplash%29.jpg/1280px-Ombre_Hair_%28Unsplash%29.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --red:#b3122e; --red-dark:#5f0a1a; --wine:#7f1d2d; --gold:#d9a441;
+    --cream:#fdf6ec; --ink:#2b2320; --muted:#7a6a63;
+  }
+  body{ font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; }
+  img{ max-width:100%; display:block; }
+  a{ text-decoration:none; }
+
+  header{ position:sticky; top:0; z-index:50; background:rgba(95,10,26,.97); color:#fff;
+    display:flex; align-items:center; justify-content:space-between; padding:.7rem 1rem;
+    box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  .brand{ font-size:1.15rem; font-weight:800; letter-spacing:2px; }
+  .brand span{ color:var(--gold); }
+  .call-btn{ background:var(--red); color:#fff; font-weight:700; padding:.55rem 1rem; border-radius:999px; font-size:.95rem; white-space:nowrap; border:1px solid rgba(255,255,255,.35); }
+  .call-btn:active{ transform:scale(.97); }
+
+  .hero{ position:relative; color:#fff; text-align:center; }
+  .hero img{ width:100%; height:62vh; min-height:340px; object-fit:cover; }
+  .hero-overlay{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(95,10,26,.25),rgba(95,10,26,.88));
+    display:flex; flex-direction:column; justify-content:flex-end; align-items:center; padding:2rem 1.2rem 2.4rem; }
+  .hero h1{ font-size:2.6rem; line-height:1.1; letter-spacing:1px; text-shadow:0 2px 12px rgba(0,0,0,.4); }
+  .hero p.tag{ font-size:1.08rem; margin-top:.5rem; color:#ffe9c9; }
+  .badge{ display:inline-block; margin-top:1rem; background:#fff; color:var(--red-dark); font-weight:700;
+    padding:.4rem 1rem; border-radius:999px; font-size:.95rem; box-shadow:0 4px 14px rgba(0,0,0,.3); }
+  .badge .star{ color:#f59e0b; }
+  .hero-cta{ margin-top:1.2rem; display:flex; gap:.6rem; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:.7rem 1.4rem; border-radius:999px; font-weight:700; }
+  .btn-call{ background:var(--red); color:#fff; }
+  .btn-ig{ background:#fff; color:var(--red-dark); }
+
+  section{ padding:3rem 1.2rem; max-width:1080px; margin:0 auto; }
+  h2{ font-size:1.8rem; text-align:center; color:var(--red-dark); margin-bottom:.4rem; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:2rem; }
+  .about p{ max-width:720px; margin:0 auto 1rem; text-align:center; font-size:1.05rem; }
+
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
+  .card{ background:#fff; border-radius:16px; padding:1.4rem 1.2rem; text-align:center;
+    box-shadow:0 4px 16px rgba(179,18,46,.10); border-top:5px solid var(--red); }
+  .card .icon{ font-size:2rem; }
+  .card h3{ margin:.5rem 0 .3rem; font-size:1.08rem; color:var(--red-dark); }
+  .card p{ color:var(--muted); font-size:.93rem; }
+  .card .spec{ display:inline-block; margin-top:.6rem; background:#fde68a; color:#92400e; font-size:.78rem; font-weight:700; padding:.2rem .7rem; border-radius:999px; }
+
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.8rem; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.15); }
+
+  .hours-wrap{ max-width:520px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(179,18,46,.10); }
+  table{ width:100%; border-collapse:collapse; }
+  td{ padding:.8rem 1.2rem; border-bottom:1px solid #fde68a; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--red-dark); }
+  .closed{ color:#dc2626 !important; }
+
+  .visit{ text-align:center; }
+  .visit address{ font-style:normal; font-size:1.05rem; margin-bottom:1.2rem; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,.15); }
+
+  .cta-band{ background:linear-gradient(120deg,var(--wine),var(--red-dark)); color:#fff; text-align:center; padding:2.6rem 1.2rem; }
+  .cta-band h2{ color:#fff; }
+  .cta-band p{ color:#ffd9de; margin-bottom:1.4rem; }
+
+  footer{ background:#3d0510; color:#f3c6cd; text-align:center; padding:1.4rem 1rem; font-size:.9rem; }
+  footer a{ color:var(--gold); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">RED <span>SALON</span></div>
+  <a class="call-btn" href="tel:+61466719217">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Ombre_Hair_%28Unsplash%29.jpg/1280px-Ombre_Hair_%28Unsplash%29.jpg" alt="Long blonde balayage hair, back view, at Red Salon Hobart">
+  <div class="hero-overlay">
+    <h1>Red Salon</h1>
+    <p class="tag">Blonde, balayage &amp; colour specialists — Elizabeth Street, Hobart</p>
+    <div class="badge"><span class="star">★</span> 4.8 · 70 Google reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-call" href="tel:+61466719217">📞 +61 466 719 217</a>
+      <a class="btn btn-ig" href="https://www.instagram.com/red_salonaus" target="_blank" rel="noopener">📸 @red_salonaus</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p class="sub">Level 3, 29 Elizabeth Street — in the heart of Hobart's CBD</p>
+  <p>Red Salon is a Hobart CBD hair studio known for its blonde specialist work and seamless balayage, using Wella colour for rich, lasting results.</p>
+  <p>From precision style cutting and keratin smoothing to extensions, perms, wedding styling and makeup, the team looks after the whole look under one roof — open six days a week, Monday to Saturday.</p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <p class="sub">What we do best — call us for pricing and bookings</p>
+  <div class="cards">
+    <div class="card"><div class="icon">✂️</div><h3>Precision Style Cutting</h3><p>Sharp, well-shaped cuts tailored to your hair type, face shape and lifestyle.</p></div>
+    <div class="card"><div class="icon">🌟</div><h3>Blonde Specialist</h3><p>Our signature work — bright, clean blondes done with care for your hair's condition.</p><span class="spec">★ Specialists</span></div>
+    <div class="card"><div class="icon">🎨</div><h3>Balayage</h3><p>Soft, sun-kissed, lived-in colour that grows out beautifully between visits.</p></div>
+    <div class="card"><div class="icon">🧴</div><h3>Wella Colour</h3><p>Professional Wella colour for rich, even, long-lasting results.</p></div>
+    <div class="card"><div class="icon">💆‍♀️</div><h3>Keratin &amp; Smoothing</h3><p>Keratin and smoothing treatments that tame frizz and leave hair sleek and manageable.</p></div>
+    <div class="card"><div class="icon">💁‍♀️</div><h3>Hair Extensions</h3><p>Added length and fullness, colour-matched to blend naturally with your own hair.</p></div>
+    <div class="card"><div class="icon">💨</div><h3>Blow Dry</h3><p>A smooth, bouncy blow dry that finishes any look — perfect before a night out.</p></div>
+    <div class="card"><div class="icon">🌀</div><h3>Perm</h3><p>Modern perms for lasting curls, waves and movement.</p></div>
+    <div class="card"><div class="icon">👰</div><h3>Weddings &amp; Occasion Styling</h3><p>Elegant upstyles and occasion hair for weddings, formals and special events.</p></div>
+    <div class="card"><div class="icon">💄</div><h3>Makeup Application</h3><p>Professional makeup application to complete your look for any occasion.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Blondes, balayage, styling &amp; inside the salon</p>
+  <div class="gallery">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Ombre_Hair_%28Unsplash%29.jpg/1280px-Ombre_Hair_%28Unsplash%29.jpg" alt="Blonde balayage waves, back view">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Brushing_Smooth_Blonde_Hair_-_50887328258.jpg/1280px-Brushing_Smooth_Blonde_Hair_-_50887328258.jpg" alt="Smooth blonde hair with a paddle brush">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Hair_Brush_-_Styling_Long_Hair_-_50887328113.jpg/1280px-Hair_Brush_-_Styling_Long_Hair_-_50887328113.jpg" alt="Styling long blonde hair">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Wedding_updo_-_2014-08-30_-_Jessica_Branstetter.jpg/1280px-Wedding_updo_-_2014-08-30_-_Jessica_Branstetter.jpg" alt="Braided wedding upstyle, back view">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Salon_de_Coiffure_Le_Temps_d%E2%80%99une_Coupe_Estrablin_06.jpg/1280px-Salon_de_Coiffure_Le_Temps_d%E2%80%99une_Coupe_Estrablin_06.jpg" alt="Inside the salon">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Various_makeup_brushes.jpg/1280px-Various_makeup_brushes.jpg" alt="Professional makeup brushes">
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Open six days a week in Hobart</p>
+  <div class="hours-wrap">
+    <table>
+      <tr><td>Monday</td><td>10:00 AM – 4:00 PM</td></tr>
+      <tr><td>Tuesday</td><td>10:00 AM – 7:00 PM</td></tr>
+      <tr><td>Wednesday</td><td>10:00 AM – 4:00 PM</td></tr>
+      <tr><td>Thursday</td><td>10:00 AM – 4:00 PM</td></tr>
+      <tr><td>Friday</td><td>10:00 AM – 5:00 PM</td></tr>
+      <tr><td>Saturday</td><td>9:00 AM – 4:30 PM</td></tr>
+      <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p class="sub">Find us on Elizabeth Street, Hobart CBD</p>
+  <address>Level 3/29 Elizabeth St,<br>Hobart TAS 7000</address>
+  <iframe class="map" loading="lazy" title="Map — Red Salon Hobart"
+    src="https://www.google.com/maps?q=Red%20Salon%2C%20Level%203%2F29%20Elizabeth%20St%2C%20Hobart%20TAS%207000&output=embed"></iframe>
+</section>
+
+<div class="cta-band">
+  <h2>Ready for great hair?</h2>
+  <p>Call us to book your appointment — or follow our latest work on Instagram.</p>
+  <div class="hero-cta">
+    <a class="btn btn-call" href="tel:+61466719217">📞 +61 466 719 217</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/red_salonaus" target="_blank" rel="noopener">📸 @red_salonaus</a>
+  </div>
+</div>
+
+<footer>
+  Red Salon · Level 3/29 Elizabeth St, Hobart TAS 7000<br>
+  📞 <a href="tel:+61466719217">+61 466 719 217</a> · 📸 <a href="https://www.instagram.com/red_salonaus" target="_blank" rel="noopener">@red_salonaus</a>
+</footer>
+
+</body>
+</html>

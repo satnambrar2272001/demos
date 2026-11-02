@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Next Level Barber Shop — 56 William St, Perth WA</title>
+<meta name="description" content="Next Level Barber Shop in the Perth CBD — haircuts, skin fades, burst fades, beard trims and hot towel shaves. Open 7 days at 56 William St, Perth.">
+<meta property="og:title" content="Next Level Barber Shop — Perth CBD">
+<meta property="og:description" content="Haircuts, skin fades, burst fades, beard trims & hot towel shaves. Open 7 days at 56 William St, Perth WA. Call +61 415 300 889.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/next-level-barber/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Barber_Chair_%28Weatherly_Building%29.jpg/1280px-Barber_Chair_%28Weatherly_Building%29.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --ink:#12100e; --coal:#1c1917; --red:#c1272d; --red-dark:#8f1d21;
+    --gold:#d4a017; --cream:#faf6ef; --paper:#ffffff; --muted:#6f6a63;
+  }
+  body{ font-family:'Segoe UI', Arial, Helvetica, sans-serif; background:var(--cream); color:var(--ink); line-height:1.55; }
+  a{ text-decoration:none; }
+  img{ display:block; width:100%; height:100%; object-fit:cover; }
+
+  /* Sticky header */
+  header{ position:sticky; top:0; z-index:50; background:var(--ink); color:#fff; display:flex; align-items:center; justify-content:space-between; padding:10px 16px; box-shadow:0 2px 10px rgba(0,0,0,.35); }
+  header .brand{ font-weight:800; letter-spacing:.5px; font-size:17px; text-transform:uppercase; }
+  header .brand span{ color:var(--red); }
+  header .brand small{ display:block; font-size:11px; font-weight:600; letter-spacing:2px; color:#cfc9c0; }
+  .call-btn{ background:var(--red); color:#fff; font-weight:700; font-size:14px; padding:10px 16px; border-radius:999px; white-space:nowrap; }
+  .call-btn:hover{ background:var(--red-dark); }
+
+  /* Hero */
+  .hero{ position:relative; color:#fff; }
+  .hero .photo{ height:440px; }
+  .hero .shade{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,8,7,.45) 0%, rgba(10,8,7,.82) 78%); display:flex; flex-direction:column; justify-content:flex-end; padding:26px 20px 30px; }
+  .badge{ display:inline-block; background:var(--gold); color:#191203; font-weight:800; font-size:13.5px; padding:6px 13px; border-radius:999px; margin-bottom:12px; align-self:flex-start; }
+  .hero h1{ font-size:37px; line-height:1.08; text-transform:uppercase; letter-spacing:.5px; }
+  .hero h1 span{ color:#ff5a52; }
+  .hero p{ margin-top:9px; font-size:16.5px; color:#efe9df; max-width:560px; }
+  .hero .cta-row{ margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; }
+  .btn{ display:inline-block; font-weight:700; font-size:15px; padding:12px 22px; border-radius:999px; }
+  .btn-red{ background:var(--red); color:#fff; }
+  .btn-ghost{ border:2px solid #fff; color:#fff; }
+
+  section{ padding:38px 20px; max-width:1020px; margin:0 auto; }
+  h2{ font-size:25px; text-transform:uppercase; letter-spacing:.6px; margin-bottom:6px; }
+  h2::after{ content:""; display:block; width:56px; height:4px; background:var(--red); border-radius:2px; margin-top:8px; }
+  .sub{ color:var(--muted); margin-bottom:20px; font-size:15.5px; }
+
+  /* Services */
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:14px; }
+  .card{ background:var(--paper); border-radius:14px; padding:20px 16px; box-shadow:0 2px 10px rgba(20,16,12,.08); border-top:5px solid var(--red); }
+  .card .icon{ font-size:26px; margin-bottom:8px; }
+  .card h3{ font-size:17px; margin-bottom:5px; }
+  .card p{ font-size:14px; color:var(--muted); }
+
+  /* Gallery */
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; }
+  .gallery figure{ border-radius:12px; overflow:hidden; height:190px; box-shadow:0 2px 8px rgba(20,16,12,.15); }
+  .gallery figure.tall{ grid-row:span 2; height:390px; }
+
+  /* Hours */
+  .hours-wrap{ background:var(--coal); color:#f3eee6; border-radius:16px; padding:24px 20px; }
+  .hours-wrap h2{ color:#fff; }
+  .hours-wrap .sub{ color:#bdb5a8; }
+  table{ width:100%; border-collapse:collapse; font-size:15.5px; }
+  td{ padding:9px 4px; border-bottom:1px solid #38332e; }
+  td:last-child{ text-align:right; font-weight:700; color:#fff; }
+  tr:last-child td{ border-bottom:none; }
+  .open-note{ margin-top:14px; background:var(--red); color:#fff; text-align:center; font-weight:700; padding:10px; border-radius:10px; font-size:15px; }
+
+  /* Visit */
+  .visit-grid{ display:grid; grid-template-columns:1fr; gap:16px; }
+  @media(min-width:720px){ .visit-grid{ grid-template-columns:1fr 1.4fr; } .hero h1{ font-size:46px; } }
+  .addr-card{ background:var(--paper); border-radius:14px; padding:22px 18px; box-shadow:0 2px 10px rgba(20,16,12,.08); }
+  .addr-card p{ margin-bottom:10px; font-size:15.5px; }
+  .addr-card b{ color:var(--red-dark); }
+  .map{ border-radius:14px; overflow:hidden; min-height:280px; box-shadow:0 2px 10px rgba(20,16,12,.12); }
+  .map iframe{ width:100%; height:100%; min-height:280px; border:0; }
+
+  /* CTA band */
+  .cta-band{ background:linear-gradient(120deg, var(--red-dark), var(--red) 55%, #e0492f); color:#fff; text-align:center; padding:36px 20px; }
+  .cta-band h2{ color:#fff; }
+  .cta-band h2::after{ background:#fff; margin-left:auto; margin-right:auto; }
+  .cta-band p{ color:#ffe9e6; margin-bottom:18px; }
+  .cta-band .btn-call{ background:#fff; color:var(--red-dark); }
+  .cta-band .btn-ig{ border:2px solid #fff; color:#fff; margin-left:8px; }
+
+  footer{ background:var(--ink); color:#a49c90; text-align:center; font-size:13.5px; padding:22px 16px; }
+  footer b{ color:#fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Next Level <span>Barber Shop</span><small>PERTH CBD · OPEN 7 DAYS</small></div>
+  <a class="call-btn" href="tel:+61415300889">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <div class="photo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Barber_Chair_%28Weatherly_Building%29.jpg/1280px-Barber_Chair_%28Weatherly_Building%29.jpg" alt="Barber chairs and stations inside a barbershop"></div>
+  <div class="shade">
+    <span class="badge">★ 4.5 · 528 Google reviews</span>
+    <h1>Next Level <span>Barber Shop</span></h1>
+    <p>Sharp cuts, clean fades and proper hot towel shaves — right in the heart of Perth on William St. Walk in any day of the week.</p>
+    <div class="cta-row">
+      <a class="btn btn-red" href="tel:+61415300889">📞 +61 415 300 889</a>
+      <a class="btn btn-ghost" href="#services">See Services</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p class="sub">Next Level Barber Shop sits at 56 William St in the Perth CBD, open seven days a week with early starts for city workers. The team covers everything from classic haircuts and skin fades to beard trims and traditional hot towel shaves — rated ★ 4.5 from 528 Google reviews.</p>
+</section>
+
+<section id="services" style="padding-top:4px;">
+  <h2>Services</h2>
+  <p class="sub">Call for pricing and bookings — <a href="tel:+61415300889" style="color:var(--red-dark);font-weight:700;">+61 415 300 889</a></p>
+  <div class="cards">
+    <div class="card"><div class="icon">✂️</div><h3>Haircuts</h3><p>Classic and modern styles, cut to suit your head shape and routine.</p></div>
+    <div class="card"><div class="icon">💈</div><h3>Skin Fades</h3><p>Tight, blended skin fades finished with sharp, clean lines.</p></div>
+    <div class="card"><div class="icon">🔥</div><h3>Burst Fades</h3><p>Curved burst fades around the ear, styled your way on top.</p></div>
+    <div class="card"><div class="icon">🧔</div><h3>Beard Trims</h3><p>Shape, tidy and detail work to keep your beard looking its best.</p></div>
+    <div class="card"><div class="icon">🪒</div><h3>Hot Towel Shaves</h3><p>The traditional close shave, finished with a hot towel.</p></div>
+  </div>
+</section>
+
+<section id="gallery" style="padding-top:4px;">
+  <h2>Gallery</h2>
+  <p class="sub">Inside the shop — the chairs, the tools and the craft.</p>
+  <div class="gallery">
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Barber_Chair_%28Weatherly_Building%29.jpg/1280px-Barber_Chair_%28Weatherly_Building%29.jpg" alt="Barber chairs at a barber station"></figure>
+    <figure class="tall"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Barber_pole_-_San_Francisco%2C_CA.jpg/1280px-Barber_pole_-_San_Francisco%2C_CA.jpg" alt="Classic red, white and blue barber pole"></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Shaving_brush_selection_in_a_baber_store_in_London.jpg/1280px-Shaving_brush_selection_in_a_baber_store_in_London.jpg" alt="Shelves of shaving brushes and grooming products"></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Safety_razor_shaving_kit.jpg/1280px-Safety_razor_shaving_kit.jpg" alt="Safety razor, shaving brush and lather mug"></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Shaving-Set.jpg/1280px-Shaving-Set.jpg" alt="Chrome razor and shaving brush on a stand"></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/2023_Trymer.jpg/1280px-2023_Trymer.jpg" alt="Electric trimmer used for fades and beard work"></figure>
+  </div>
+</section>
+
+<section id="hours" style="padding-top:4px;">
+  <div class="hours-wrap">
+    <h2>Opening Hours</h2>
+    <p class="sub">Open 7 days — walk-ins welcome.</p>
+    <table>
+      <tr><td>Monday</td><td>8:00 AM – 6:00 PM</td></tr>
+      <tr><td>Tuesday</td><td>8:00 AM – 6:00 PM</td></tr>
+      <tr><td>Wednesday</td><td>8:00 AM – 6:00 PM</td></tr>
+      <tr><td>Thursday</td><td>8:00 AM – 6:00 PM</td></tr>
+      <tr><td>Friday</td><td>8:00 AM – 7:00 PM</td></tr>
+      <tr><td>Saturday</td><td>9:00 AM – 5:30 PM</td></tr>
+      <tr><td>Sunday</td><td>9:00 AM – 5:00 PM</td></tr>
+    </table>
+    <div class="open-note">💈 Open today — drop in or call ahead: +61 415 300 889</div>
+  </div>
+</section>
+
+<section id="visit">
+  <h2>Visit Us</h2>
+  <p class="sub">Find us in the Perth CBD.</p>
+  <div class="visit-grid">
+    <div class="addr-card">
+      <p><b>📍 Address</b><br>Next Level Barber Shop<br>56 William St<br>Perth WA 6000, Australia</p>
+      <p><b>📞 Phone</b><br><a href="tel:+61415300889" style="color:var(--red-dark);font-weight:700;">+61 415 300 889</a></p>
+      <p><b>📷 Instagram</b><br><a href="https://www.instagram.com/next_level_barbershop_perth" style="color:var(--red-dark);font-weight:700;">@next_level_barbershop_perth</a></p>
+    </div>
+    <div class="map">
+      <iframe title="Map — Next Level Barber Shop, 56 William St, Perth" src="https://www.google.com/maps?q=Next%20Level%20Barber%20Shop%2C%2056%20William%20St%2C%20Perth%20WA%206000%2C%20Australia&output=embed" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Ready for a Fresh Cut?</h2>
+  <p>Walk in any day of the week, or call ahead to lock in your chair.</p>
+  <a class="btn btn-call" href="tel:+61415300889">📞 Call +61 415 300 889</a>
+  <a class="btn btn-ig" href="https://www.instagram.com/next_level_barbershop_perth">📷 Instagram</a>
+</div>
+
+<footer>
+  <b>Next Level Barber Shop</b> · 56 William St, Perth WA 6000 · +61 415 300 889<br>
+  Haircuts · Skin Fades · Burst Fades · Beard Trims · Hot Towel Shaves
+</footer>
+
+</body>
+</html>

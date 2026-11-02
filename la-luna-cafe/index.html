@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Luna Cafe — Beachside Cafe, Henley Beach South</title>
+<meta name="description" content="La Luna Cafe at Henley Beach South — coffee, bacon & egg brioche, rolls & wraps, homemade soup, fresh juice, smoothies and milkshakes, just steps from the sand.">
+<meta property="og:title" content="La Luna Cafe — Beachside Cafe, Henley Beach South">
+<meta property="og:description" content="Coffee, bacon & egg brioche, fresh juice, smoothies and homemade soup at 45 Henley Beach Road, Henley Beach South SA.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/la-luna-cafe/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Rosetta_latte_art_in_Sydney_01.jpg/1280px-Rosetta_latte_art_in_Sydney_01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --sand:#fdf6ec; --cream:#fffaf2; --ink:#33302a; --muted:#7a7264;
+    --coral:#e86a4e; --coral-d:#cf5136; --teal:#128091; --teal-d:#0c6573;
+    --gold:#f2b950; --card:#ffffff;
+  }
+  body{ font-family:'Segoe UI', system-ui, -apple-system, Arial, sans-serif; background:var(--sand); color:var(--ink); line-height:1.6; }
+  a{ text-decoration:none; }
+  header{ position:sticky; top:0; z-index:50; background:rgba(255,250,242,.96); backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:space-between; padding:10px 16px; box-shadow:0 2px 10px rgba(90,60,20,.12); }
+  .brand{ font-size:1.25rem; font-weight:800; color:var(--teal-d); letter-spacing:.3px; }
+  .brand span{ color:var(--coral); }
+  .call-btn{ background:var(--coral); color:#fff; font-weight:700; padding:9px 16px; border-radius:999px; font-size:.95rem; box-shadow:0 3px 8px rgba(232,106,78,.4); }
+  .call-btn:hover{ background:var(--coral-d); }
+  .hero{ position:relative; text-align:center; color:#fff; }
+  .hero img{ width:100%; height:62vh; min-height:380px; object-fit:cover; display:block; filter:brightness(.72); }
+  .hero-text{ position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; }
+  .hero-text h1{ font-size:2.6rem; line-height:1.15; text-shadow:0 3px 14px rgba(0,0,0,.45); }
+  .hero-text p{ font-size:1.15rem; margin-top:10px; max-width:520px; text-shadow:0 2px 10px rgba(0,0,0,.5); }
+  .badge{ margin-top:18px; background:var(--gold); color:#4a3405; font-weight:800; padding:8px 18px; border-radius:999px; font-size:1rem; box-shadow:0 4px 12px rgba(0,0,0,.3); }
+  .hero-cta{ margin-top:20px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:12px 22px; border-radius:999px; font-weight:700; font-size:1rem; }
+  .btn-coral{ background:var(--coral); color:#fff; }
+  .btn-ghost{ background:rgba(255,255,255,.92); color:var(--teal-d); }
+  section{ max-width:1000px; margin:0 auto; padding:44px 18px 8px; }
+  h2{ font-size:1.7rem; color:var(--teal-d); margin-bottom:6px; text-align:center; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:24px; }
+  .about{ display:grid; gap:20px; align-items:center; }
+  .about img{ width:100%; border-radius:16px; box-shadow:0 8px 22px rgba(90,60,20,.18); }
+  @media(min-width:760px){ .about{ grid-template-columns:1fr 1fr; } .hero-text h1{ font-size:3.4rem; } }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; }
+  .card{ background:var(--card); border-radius:14px; padding:20px 16px; box-shadow:0 4px 14px rgba(90,60,20,.09); border-top:4px solid var(--gold); }
+  .card .ico{ font-size:1.7rem; }
+  .card h3{ margin:6px 0 4px; font-size:1.08rem; color:var(--ink); }
+  .card p{ color:var(--muted); font-size:.94rem; }
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  .gallery figure{ border-radius:14px; overflow:hidden; box-shadow:0 6px 16px rgba(90,60,20,.14); background:#fff; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; display:block; }
+  .gallery figcaption{ padding:8px 12px; font-size:.9rem; color:var(--muted); }
+  table{ width:100%; max-width:520px; margin:0 auto; border-collapse:collapse; background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 4px 14px rgba(90,60,20,.09); }
+  td{ padding:11px 18px; border-bottom:1px solid #f3e7d3; font-size:.98rem; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--teal-d); }
+  .closed{ color:var(--coral-d) !important; }
+  .visit{ text-align:center; }
+  .visit p{ margin-bottom:14px; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 8px 22px rgba(90,60,20,.16); }
+  .cta{ margin:48px auto 0; max-width:1000px; background:linear-gradient(120deg, var(--teal) 0%, var(--teal-d) 60%, #094a54 100%); border-radius:20px; padding:36px 22px; text-align:center; color:#fff; }
+  .cta h2{ color:#fff; }
+  .cta p{ opacity:.92; margin-bottom:20px; }
+  .cta .btn-ig{ background:#fff; color:var(--teal-d); }
+  .cta .btn-call{ background:var(--coral); color:#fff; }
+  footer{ text-align:center; padding:30px 16px 38px; color:var(--muted); font-size:.9rem; }
+  footer a{ color:var(--teal-d); font-weight:600; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">🌙 La Luna <span>Cafe</span></div>
+  <a class="call-btn" href="tel:+61405234625">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Rosetta_latte_art_in_Sydney_01.jpg/1280px-Rosetta_latte_art_in_Sydney_01.jpg" alt="Latte art coffee at La Luna Cafe">
+  <div class="hero-text">
+    <h1>La Luna Cafe</h1>
+    <p>Beachside coffee &amp; brunch at Henley Beach South — fresh, simple and made with love, just steps from the sand.</p>
+    <div class="badge">★ 4.9 · Loved on Google</div>
+    <div class="hero-cta">
+      <a class="btn btn-coral" href="tel:+61405234625">📞 +61 405 234 625</a>
+      <a class="btn btn-ghost" href="#menu">See the Menu</a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>About La Luna</h2>
+  <p class="sub">Your local beachside stop on Henley Beach Road</p>
+  <div class="about">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Cozy_cafe_interior_with_stylish_seating_and_large_windows_on_a_quiet_street.jpg/1280px-Cozy_cafe_interior_with_stylish_seating_and_large_windows_on_a_quiet_street.jpg" alt="Inside La Luna Cafe">
+    <div>
+      <p>La Luna Cafe is a small, friendly beachside cafe in Henley Beach South, pouring great coffee from early morning — we open at 6 AM on weekdays, perfect for a pre-beach or pre-work stop.</p>
+      <p style="margin-top:12px;">Locals know us for our almond lattes, macchiatos and the bacon &amp; egg brioche. Whether it is a fresh juice after a beach walk or a homemade soup at lunch, everything is made fresh to order.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <h2>Menu Favourites</h2>
+  <p class="sub">Fresh every morning — call ahead and we will have it ready</p>
+  <div class="grid">
+    <div class="card"><div class="ico">☕</div><h3>Coffee</h3><p>Proper espresso coffee — our almond latte and macchiato are local favourites.</p></div>
+    <div class="card"><div class="ico">🥐</div><h3>Bacon &amp; Egg Brioche</h3><p>Our best-known breakfast — bacon and egg on a soft brioche roll.</p></div>
+    <div class="card"><div class="ico">🌯</div><h3>Rolls &amp; Wraps</h3><p>Fresh rolls and wraps, made to order for an easy beachside lunch.</p></div>
+    <div class="card"><div class="ico">🍲</div><h3>Homemade Soup</h3><p>Warming homemade soup — just the thing after a breezy beach walk.</p></div>
+    <div class="card"><div class="ico">🍊</div><h3>Fresh Juice</h3><p>Freshly squeezed juice, full of sunshine.</p></div>
+    <div class="card"><div class="ico">🥤</div><h3>Smoothies</h3><p>Thick, fruity smoothies blended fresh.</p></div>
+    <div class="card"><div class="ico">🍓</div><h3>Milkshakes</h3><p>Old-school milkshakes, thick and creamy.</p></div>
+    <div class="card"><div class="ico">🍰</div><h3>Treats</h3><p>Sweet treats to go with your coffee.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Mornings at La Luna &amp; Henley Beach</p>
+  <div class="gallery">
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Henley_Beach%2C_Australia_%28Unsplash%29.jpg/1280px-Henley_Beach%2C_Australia_%28Unsplash%29.jpg" alt="Henley Beach"><figcaption>Henley Beach — right on our doorstep</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Diner-Bacon-%26-Egg-Sandwich-On-Roll.jpg/1280px-Diner-Bacon-%26-Egg-Sandwich-On-Roll.jpg" alt="Bacon and egg brioche"><figcaption>Our famous bacon &amp; egg brioche</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Glass_of_Fresh_Orange_Juice.jpg/1280px-Glass_of_Fresh_Orange_Juice.jpg" alt="Fresh juice"><figcaption>Fresh juice, squeezed to order</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Mango_Smoothie%2C_Petra_Restaurant%2C_2026_%2802%29.jpg/1280px-Mango_Smoothie%2C_Petra_Restaurant%2C_2026_%2802%29.jpg" alt="Smoothie"><figcaption>Smoothies blended fresh</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Strawberry_Milkshake_Whipped_Cream.jpg/1280px-Strawberry_Milkshake_Whipped_Cream.jpg" alt="Milkshake"><figcaption>Thick, creamy milkshakes</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/DSC_7126_Creamy_pumpkin_soup_garnished_with_a_swirl_of_cream_and_chopped_herbs_served_in_a_white_soup_cup.jpg/1280px-DSC_7126_Creamy_pumpkin_soup_garnished_with_a_swirl_of_cream_and_chopped_herbs_served_in_a_white_soup_cup.jpg" alt="Homemade soup"><figcaption>Homemade soup of the day</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Early starts, beach days</p>
+  <table>
+    <tr><td>Monday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Tuesday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Wednesday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Thursday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Friday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Saturday</td><td>7:00 AM – 12:30 PM</td></tr>
+    <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+    <tr><td>Public holidays</td><td class="closed">Closed</td></tr>
+  </table>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p>📍 45 Henley Beach Road, Henley Beach South SA 5022<br>📞 <a href="tel:+61405234625" style="color:var(--teal-d);font-weight:600;">+61 405 234 625</a></p>
+  <iframe class="map" loading="lazy" src="https://www.google.com/maps?q=La%20Luna%20Cafe%2045%20Henley%20Beach%20Road%20Henley%20Beach%20South%20SA%205022&output=embed" title="La Luna Cafe location map"></iframe>
+</section>
+
+<div style="padding:0 18px;">
+  <div class="cta">
+    <h2>Start your beach day right ☀️</h2>
+    <p>Call ahead for coffee &amp; breakfast, or follow along for daily specials.</p>
+    <a class="btn btn-call" href="tel:+61405234625">📞 Call the Cafe</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/lalunacafe.henleybeach" target="_blank" rel="noopener">📷 @lalunacafe.henleybeach</a>
+  </div>
+</div>
+
+<footer>
+  La Luna Cafe · 45 Henley Beach Road, Henley Beach South SA 5022 · <a href="tel:+61405234625">+61 405 234 625</a><br>
+  Open Mon–Fri 6:00 AM – 1:30 PM · Sat 7:00 AM – 12:30 PM · Closed Sundays &amp; public holidays
+</footer>
+
+</body>
+</html>
