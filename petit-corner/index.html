@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petit Corner — Toasties, Baguettes & French Pastries, Melbourne</title>
+<meta name="description" content="Petit Corner at Ground Floor, 342 Flinders St, Melbourne — chicken melt, KBBQ pulled beef toastie, roast beef toastie, baguettes, French pastries, hojicha salted cream latte, salted honey foam latte, matcha with peach cream and catering.">
+<meta property="og:title" content="Petit Corner — Toasties, Baguettes & French Pastries, Melbourne">
+<meta property="og:description" content="French-inspired toasties, baguettes & pastries steps from Flinders Street Station. ★ 5.0 · 86 Google reviews. Open Mon–Fri from 6:30 AM.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/petit-corner/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Criss_Cross_Croissants.jpg/1280px-Criss_Cross_Croissants.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --bg:#fdf9f2; --ink:#23202b; --muted:#7c7484;
+    --navy:#1e3a8a; --navy-d:#172554; --raspberry:#e11d48; --butter:#facc15; --card:#ffffff;
+  }
+  body{ font-family:'Segoe UI', system-ui, -apple-system, Arial, sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+  a{ text-decoration:none; }
+  header{ position:sticky; top:0; z-index:50; background:rgba(253,249,242,.96); backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:space-between; padding:10px 16px; box-shadow:0 2px 10px rgba(23,37,84,.12); }
+  .brand{ font-size:1.25rem; font-weight:800; color:var(--navy-d); letter-spacing:.3px; }
+  .brand span{ color:var(--raspberry); }
+  .call-btn{ background:var(--raspberry); color:#fff; font-weight:700; padding:9px 16px; border-radius:999px; font-size:.95rem; box-shadow:0 3px 8px rgba(225,29,72,.35); }
+  .hero{ position:relative; text-align:center; color:#fff; }
+  .hero img{ width:100%; height:62vh; min-height:380px; object-fit:cover; display:block; filter:brightness(.66); }
+  .hero-text{ position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; }
+  .hero-text h1{ font-size:2.6rem; line-height:1.15; text-shadow:0 3px 14px rgba(0,0,0,.45); }
+  .hero-text p{ font-size:1.15rem; margin-top:10px; max-width:540px; text-shadow:0 2px 10px rgba(0,0,0,.5); }
+  .badge{ margin-top:18px; background:var(--butter); color:#422006; font-weight:800; padding:8px 18px; border-radius:999px; font-size:1rem; box-shadow:0 4px 12px rgba(0,0,0,.3); }
+  .hero-cta{ margin-top:20px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:12px 22px; border-radius:999px; font-weight:700; font-size:1rem; }
+  .btn-berry{ background:var(--raspberry); color:#fff; }
+  .btn-ghost{ background:rgba(255,255,255,.92); color:var(--navy-d); }
+  section{ max-width:1000px; margin:0 auto; padding:44px 18px 8px; }
+  h2{ font-size:1.7rem; color:var(--navy-d); margin-bottom:6px; text-align:center; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:24px; }
+  .about p{ max-width:720px; margin:0 auto 1rem; text-align:center; font-size:1.05rem; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; }
+  .card{ background:var(--card); border-radius:14px; padding:20px 16px; box-shadow:0 4px 14px rgba(23,37,84,.09); border-top:4px solid var(--butter); text-align:center; }
+  .card .ico{ font-size:1.7rem; }
+  .card h3{ margin:6px 0 4px; font-size:1.08rem; color:var(--ink); }
+  .card p{ color:var(--muted); font-size:.94rem; }
+  .card .spec{ display:inline-block; margin-top:.6rem; background:#dbeafe; color:#1e40af; font-size:.78rem; font-weight:700; padding:.2rem .7rem; border-radius:999px; }
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  .gallery figure{ border-radius:14px; overflow:hidden; box-shadow:0 6px 16px rgba(23,37,84,.14); background:#fff; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; display:block; }
+  .gallery figcaption{ padding:8px 12px; font-size:.9rem; color:var(--muted); }
+  table{ width:100%; max-width:520px; margin:0 auto; border-collapse:collapse; background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 4px 14px rgba(23,37,84,.09); }
+  td{ padding:11px 18px; border-bottom:1px solid #fef9c3; font-size:.98rem; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--navy-d); }
+  .closed{ color:#dc2626 !important; }
+  .visit{ text-align:center; }
+  .visit p{ margin-bottom:14px; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 8px 22px rgba(23,37,84,.16); }
+  .cta{ margin:48px auto 0; max-width:1000px; background:linear-gradient(120deg, var(--navy) 0%, var(--navy-d) 60%, #0a112e 100%); border-radius:20px; padding:36px 22px; text-align:center; color:#fff; }
+  .cta h2{ color:#fff; }
+  .cta p{ opacity:.92; margin-bottom:20px; }
+  .cta .btn-ig{ background:#fff; color:var(--navy-d); }
+  .cta .btn-call{ background:var(--raspberry); color:#fff; }
+  footer{ text-align:center; padding:30px 16px 38px; color:var(--muted); font-size:.9rem; }
+  footer a{ color:var(--navy-d); font-weight:600; }
+  @media(min-width:760px){ .hero-text h1{ font-size:3.4rem; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">🥐 Petit <span>Corner</span></div>
+  <a class="call-btn" href="tel:+61450479880">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Criss_Cross_Croissants.jpg/1280px-Criss_Cross_Croissants.jpg" alt="Fresh croissants at Petit Corner, Flinders Street Melbourne">
+  <div class="hero-text">
+    <h1>Petit Corner</h1>
+    <p>A little French corner on Flinders Street — toasties, baguettes, pastries &amp; creative lattes from 6:30 AM.</p>
+    <div class="badge">★ 5.0 · 86 Google reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-berry" href="tel:+61450479880">📞 +61 450 479 880</a>
+      <a class="btn btn-ghost" href="#menu">See the Menu</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <h2>About Petit Corner</h2>
+  <p class="sub">Built for the morning rush, steps from Flinders Street Station</p>
+  <p>Petit Corner opens at 6:30 AM on Flinders Street, made for Melbourne's morning commuters — and food blog Smooch Food called it "the best food quality of our Melbourne café stops so far".</p>
+  <p>Toasties pressed to order, fresh baguettes, French pastries and lattes with a twist — hojicha with salted cream, salted honey foam, and matcha with peach cream.</p>
+</section>
+
+<section id="menu">
+  <h2>Menu Highlights</h2>
+  <p class="sub">Pressed, baked &amp; poured fresh — call ahead and skip the queue</p>
+  <div class="grid">
+    <div class="card"><div class="ico">🧀</div><h3>Chicken Melt</h3><p>Our go-to chicken melt, pressed golden and gooey.</p><span class="spec">★ Favourite</span></div>
+    <div class="card"><div class="ico">🥩</div><h3>KBBQ Pulled Beef Toastie</h3><p>Korean BBQ pulled beef in a crispy toasted sandwich.</p></div>
+    <div class="card"><div class="ico">🥪</div><h3>Roast Beef Toastie</h3><p>Classic roast beef, toasted just right.</p></div>
+    <div class="card"><div class="ico">🥖</div><h3>Baguettes</h3><p>Fresh baguettes, filled and ready for the commute.</p></div>
+    <div class="card"><div class="ico">🥐</div><h3>French Pastries</h3><p>Flaky French pastries, fresh for the morning.</p></div>
+    <div class="card"><div class="ico">🍵</div><h3>Hojicha Salted Cream Latte</h3><p>Roasted hojicha under a salted cream cap.</p></div>
+    <div class="card"><div class="ico">🍯</div><h3>Salted Honey Foam Latte</h3><p>Sweet-salty honey foam over a smooth latte.</p></div>
+    <div class="card"><div class="ico">🍑</div><h3>Matcha with Peach Cream</h3><p>Matcha softened with peach cream — fresh and fruity.</p></div>
+    <div class="card"><div class="ico">🎉</div><h3>Catering</h3><p>Petit Corner favourites for your office or event — ask us about catering.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Toasties, baguettes, pastries &amp; signature lattes</p>
+  <div class="gallery">
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Chicken_sandwich_on_toasted_homemade_bread%2C_with_Jarlsberg_cheese%2C_Ligurian_walnut_pesto%2C_olive_oil%2C_and_black_pepper%2C_baked_and_served_hot_-_Massachusetts.jpg/1280px-Chicken_sandwich_on_toasted_homemade_bread%2C_with_Jarlsberg_cheese%2C_Ligurian_walnut_pesto%2C_olive_oil%2C_and_black_pepper%2C_baked_and_served_hot_-_Massachusetts.jpg" alt="A toasted chicken sandwich"><figcaption>The chicken melt, toasted hot</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Grilled_ham_and_cheese_sandwich.jpg/1280px-Grilled_ham_and_cheese_sandwich.jpg" alt="A grilled cheese toastie"><figcaption>Toasties, pressed golden</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Liat_Portal_for_Foodie_Disorder_-_Homemade_roast_beef_baguette_sandwich.jpg/1280px-Liat_Portal_for_Foodie_Disorder_-_Homemade_roast_beef_baguette_sandwich.jpg" alt="A roast beef baguette sandwich"><figcaption>Roast beef baguette</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Baguette_and_coffee_at_Victoria%27s_Cafe_and_Bakery.jpg/1280px-Baguette_and_coffee_at_Victoria%27s_Cafe_and_Bakery.jpg" alt="Baguette and coffee"><figcaption>Baguette &amp; coffee to go</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Pr%C3%A9sentoir_de_p%C3%A2tisserie_Kaysersberg.jpg/1280px-Pr%C3%A9sentoir_de_p%C3%A2tisserie_Kaysersberg.jpg" alt="A French pastry display"><figcaption>French pastries in the cabinet</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Iced_Hojicha_Latte_and_Iced_Matcha_Latte_-_Rawlab_Juice_%26_Tea_2025-07-12.jpg/1280px-Iced_Hojicha_Latte_and_Iced_Matcha_Latte_-_Rawlab_Juice_%26_Tea_2025-07-12.jpg" alt="Iced hojicha and matcha lattes"><figcaption>Hojicha &amp; matcha lattes, iced</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Weekday mornings &amp; afternoons on Flinders Street</p>
+  <table>
+    <tr><td>Monday</td><td>6:30 AM – 4:00 PM</td></tr>
+    <tr><td>Tuesday</td><td>6:30 AM – 4:00 PM</td></tr>
+    <tr><td>Wednesday</td><td>6:30 AM – 4:00 PM</td></tr>
+    <tr><td>Thursday</td><td>6:30 AM – 4:00 PM</td></tr>
+    <tr><td>Friday</td><td>6:30 AM – 4:00 PM</td></tr>
+    <tr><td>Saturday – Sunday</td><td class="closed">Closed</td></tr>
+    <tr><td>Public holidays</td><td class="closed">Closed</td></tr>
+  </table>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p>📍 Ground Floor, 342 Flinders St, Melbourne VIC 3000<br>📞 <a href="tel:+61450479880" style="color:var(--navy-d);font-weight:600;">+61 450 479 880</a></p>
+  <iframe class="map" loading="lazy" src="https://www.google.com/maps?q=Petit%20Corner%2C%20342%20Flinders%20St%2C%20Melbourne%20VIC%203000&output=embed" title="Petit Corner location map"></iframe>
+</section>
+
+<div style="padding:0 18px;">
+  <div class="cta">
+    <h2>Bonjour, Melbourne 🥐</h2>
+    <p>Call ahead for your morning toastie &amp; latte, or ask us about catering.</p>
+    <a class="btn btn-call" href="tel:+61450479880">📞 Call the Cafe</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/petitcornermelb" target="_blank" rel="noopener">📷 @petitcornermelb</a>
+  </div>
+</div>
+
+<footer>
+  Petit Corner · Ground Floor, 342 Flinders St, Melbourne VIC 3000 · <a href="tel:+61450479880">+61 450 479 880</a><br>
+  Open Mon–Fri 6:30 AM – 4:00 PM · Closed weekends &amp; public holidays
+</footer>
+
+</body>
+</html>

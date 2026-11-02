@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Likuid Espresso — Coffee, Breakfast & Brunch, Adelaide</title>
+<meta name="description" content="Likuid Espresso at 44 Waymouth St, Adelaide — Likuid Gold espresso, latte, flat white and cappuccino, eggs benedict, smashed avocado, prosciutto bun, big kah-tuna, minestrone and sourdough. Breakfast, brunch, lunch & coffee.">
+<meta property="og:title" content="Likuid Espresso — Coffee, Breakfast & Brunch, Adelaide">
+<meta property="og:description" content="Every shot dialled in, every morning — Likuid Gold espresso & all-day brunch at 44 Waymouth Street, Adelaide. ★ 4.5 · 312 Google reviews.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/likuid-espresso/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Double_Espresso_Shot_in_a_Demitasse.jpg/1280px-Double_Espresso_Shot_in_a_Demitasse.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --bg:#fdf8f0; --ink:#2d1a12; --muted:#8a7364;
+    --espresso:#7c2d12; --espresso-d:#431407; --orange:#ea580c; --gold:#f59e0b; --card:#ffffff;
+  }
+  body{ font-family:'Segoe UI', system-ui, -apple-system, Arial, sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+  a{ text-decoration:none; }
+  header{ position:sticky; top:0; z-index:50; background:rgba(253,248,240,.96); backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:space-between; padding:10px 16px; box-shadow:0 2px 10px rgba(67,20,7,.12); }
+  .brand{ font-size:1.25rem; font-weight:800; color:var(--espresso-d); letter-spacing:.3px; }
+  .brand span{ color:var(--orange); }
+  .call-btn{ background:var(--orange); color:#fff; font-weight:700; padding:9px 16px; border-radius:999px; font-size:.95rem; box-shadow:0 3px 8px rgba(234,88,12,.35); }
+  .hero{ position:relative; text-align:center; color:#fff; }
+  .hero img{ width:100%; height:62vh; min-height:380px; object-fit:cover; display:block; filter:brightness(.62); }
+  .hero-text{ position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; }
+  .hero-text h1{ font-size:2.6rem; line-height:1.15; text-shadow:0 3px 14px rgba(0,0,0,.45); }
+  .hero-text p{ font-size:1.15rem; margin-top:10px; max-width:540px; text-shadow:0 2px 10px rgba(0,0,0,.5); }
+  .badge{ margin-top:18px; background:var(--gold); color:#451a03; font-weight:800; padding:8px 18px; border-radius:999px; font-size:1rem; box-shadow:0 4px 12px rgba(0,0,0,.3); }
+  .hero-cta{ margin-top:20px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:12px 22px; border-radius:999px; font-weight:700; font-size:1rem; }
+  .btn-orange{ background:var(--orange); color:#fff; }
+  .btn-ghost{ background:rgba(255,255,255,.92); color:var(--espresso-d); }
+  section{ max-width:1000px; margin:0 auto; padding:44px 18px 8px; }
+  h2{ font-size:1.7rem; color:var(--espresso-d); margin-bottom:6px; text-align:center; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:24px; }
+  .about p{ max-width:720px; margin:0 auto 1rem; text-align:center; font-size:1.05rem; }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; }
+  .card{ background:var(--card); border-radius:14px; padding:20px 16px; box-shadow:0 4px 14px rgba(67,20,7,.09); border-top:4px solid var(--gold); text-align:center; }
+  .card .ico{ font-size:1.7rem; }
+  .card h3{ margin:6px 0 4px; font-size:1.08rem; color:var(--ink); }
+  .card p{ color:var(--muted); font-size:.94rem; }
+  .card .spec{ display:inline-block; margin-top:.6rem; background:#ffedd5; color:#9a3412; font-size:.78rem; font-weight:700; padding:.2rem .7rem; border-radius:999px; }
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  .gallery figure{ border-radius:14px; overflow:hidden; box-shadow:0 6px 16px rgba(67,20,7,.14); background:#fff; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; display:block; }
+  .gallery figcaption{ padding:8px 12px; font-size:.9rem; color:var(--muted); }
+  table{ width:100%; max-width:520px; margin:0 auto; border-collapse:collapse; background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 4px 14px rgba(67,20,7,.09); }
+  td{ padding:11px 18px; border-bottom:1px solid #ffedd5; font-size:.98rem; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--espresso-d); }
+  .closed{ color:#dc2626 !important; }
+  .visit{ text-align:center; }
+  .visit p{ margin-bottom:14px; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 8px 22px rgba(67,20,7,.16); }
+  .cta{ margin:48px auto 0; max-width:1000px; background:linear-gradient(120deg, var(--orange) 0%, var(--espresso) 60%, var(--espresso-d) 100%); border-radius:20px; padding:36px 22px; text-align:center; color:#fff; }
+  .cta h2{ color:#fff; }
+  .cta p{ opacity:.92; margin-bottom:20px; }
+  .cta .btn-ig{ background:#fff; color:var(--espresso-d); }
+  .cta .btn-call{ background:var(--espresso-d); color:#fff; }
+  footer{ text-align:center; padding:30px 16px 38px; color:var(--muted); font-size:.9rem; }
+  footer a{ color:var(--espresso-d); font-weight:600; }
+  @media(min-width:760px){ .hero-text h1{ font-size:3.4rem; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">☕ Likuid <span>Espresso</span></div>
+  <a class="call-btn" href="tel:+61884103413">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Double_Espresso_Shot_in_a_Demitasse.jpg/1280px-Double_Espresso_Shot_in_a_Demitasse.jpg" alt="A double espresso shot at Likuid Espresso, Waymouth Street Adelaide">
+  <div class="hero-text">
+    <h1>Likuid Espresso</h1>
+    <p>Every shot dialled in, every morning — Likuid Gold espresso, breakfast, brunch &amp; lunch on Waymouth Street.</p>
+    <div class="badge">★ 4.5 · 312 Google reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-orange" href="tel:+61884103413">📞 +61 8 8410 3413</a>
+      <a class="btn btn-ghost" href="#menu">See the Menu</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <h2>About Likuid</h2>
+  <p class="sub">Adelaide CBD's early-morning coffee ritual, from 6 AM</p>
+  <p>Likuid Espresso pours what reviewers repeatedly call the best and most consistent coffee in Adelaide's CBD. It starts with our house Likuid Gold Espresso — every shot dialled in, every morning.</p>
+  <p>Stay for breakfast, brunch or lunch: eggs benedict, smashed avocado, a prosciutto bun or a warming minestrone, all with proper coffee on the side.</p>
+</section>
+
+<section id="menu">
+  <h2>Menu Highlights</h2>
+  <p class="sub">Breakfast, brunch, lunch &amp; coffee — call ahead and we will have it ready</p>
+  <div class="grid">
+    <div class="card"><div class="ico">☕</div><h3>Likuid Gold Espresso</h3><p>Our house espresso — every shot dialled in, every morning.</p><span class="spec">★ House Blend</span></div>
+    <div class="card"><div class="ico">🥛</div><h3>Latte · Flat White · Cappuccino</h3><p>The classics, made with care and consistency, cup after cup.</p></div>
+    <div class="card"><div class="ico">🍳</div><h3>Eggs Benedict</h3><p>A brunch favourite, done properly.</p></div>
+    <div class="card"><div class="ico">🥑</div><h3>Smashed Avocado</h3><p>Fresh smashed avo on toast — a CBD breakfast staple.</p></div>
+    <div class="card"><div class="ico">🥖</div><h3>Prosciutto Bun</h3><p>Prosciutto in a fresh bun — simple and delicious.</p></div>
+    <div class="card"><div class="ico">🐟</div><h3>Big Kah-Tuna</h3><p>Our big tuna favourite — ask the team what's in today's.</p></div>
+    <div class="card"><div class="ico">🍲</div><h3>Minestrone</h3><p>Warming, hearty minestrone soup.</p></div>
+    <div class="card"><div class="ico">🍞</div><h3>Sourdough</h3><p>Fresh sourdough, the foundation of our breakfast menu.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Gold shots, brunch plates &amp; CBD mornings</p>
+  <div class="gallery">
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Flat_white_coffee_with_pretty_feather_pattern.jpg/1280px-Flat_white_coffee_with_pretty_feather_pattern.jpg" alt="Flat white with feather latte art"><figcaption>Flat whites, poured with care</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/A_cup_of_cappuccino_at_Miettes_Bakery%2C_Graceville%2C_Queensland%2C_2023.jpg/1280px-A_cup_of_cappuccino_at_Miettes_Bakery%2C_Graceville%2C_Queensland%2C_2023.jpg" alt="A cappuccino"><figcaption>Cappuccino, Australian style</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Eggs_Benedict-01-cropped.jpg/1280px-Eggs_Benedict-01-cropped.jpg" alt="Eggs benedict"><figcaption>Eggs benedict for brunch</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Smashed_Avocado_On_Toast_%28with_one_poached_egg%29_-_Jonny%27s_2026-01-06.jpg/1280px-Smashed_Avocado_On_Toast_%28with_one_poached_egg%29_-_Jonny%27s_2026-01-06.jpg" alt="Smashed avocado on toast with a poached egg"><figcaption>Smashed avo &amp; poached egg</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Liat_Portal_for_Foodie_Disorder_-_Homemade_minestrone_soup.jpg/1280px-Liat_Portal_for_Foodie_Disorder_-_Homemade_minestrone_soup.jpg" alt="A bowl of minestrone soup"><figcaption>Homemade-style minestrone</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Tuna_sandwich.jpg/1280px-Tuna_sandwich.jpg" alt="A tuna sandwich"><figcaption>The Big Kah-Tuna spirit</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Early starts, Monday to Friday</p>
+  <table>
+    <tr><td>Monday</td><td>6:00 AM – 4:00 PM</td></tr>
+    <tr><td>Tuesday</td><td>6:00 AM – 4:00 PM</td></tr>
+    <tr><td>Wednesday</td><td>6:00 AM – 4:00 PM</td></tr>
+    <tr><td>Thursday</td><td>6:00 AM – 4:00 PM</td></tr>
+    <tr><td>Friday</td><td>6:00 AM – 4:00 PM</td></tr>
+    <tr><td>Saturday – Sunday</td><td>Call ahead for hours</td></tr>
+  </table>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p>📍 44 Waymouth St, Adelaide SA 5000<br>📞 <a href="tel:+61884103413" style="color:var(--espresso-d);font-weight:600;">+61 8 8410 3413</a></p>
+  <iframe class="map" loading="lazy" src="https://www.google.com/maps?q=Likuid%20Espresso%2C%2044%20Waymouth%20St%2C%20Adelaide%20SA%205000&output=embed" title="Likuid Espresso location map"></iframe>
+</section>
+
+<div style="padding:0 18px;">
+  <div class="cta">
+    <h2>Start the day the Likuid way ☕</h2>
+    <p>Call ahead for coffee &amp; brunch, or follow along for daily specials.</p>
+    <a class="btn btn-call" href="tel:+61884103413">📞 Call the Cafe</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/likuidespresso" target="_blank" rel="noopener">📷 @likuidespresso</a>
+  </div>
+</div>
+
+<footer>
+  Likuid Espresso · 44 Waymouth St, Adelaide SA 5000 · <a href="tel:+61884103413">+61 8 8410 3413</a><br>
+  Open Mon–Fri 6:00 AM – 4:00 PM
+</footer>
+
+</body>
+</html>

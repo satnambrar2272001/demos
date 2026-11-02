@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ipoh Barbershop — Sydney NSW</title>
+<meta name="description" content="Ipoh Barbershop, Unit 185/569 George St (Summit Arcade), Sydney — skin fades, beard trims, hot towel shaves, classic cuts and kids cuts. Walk-ins only, open 7 days.">
+<meta property="og:title" content="Ipoh Barbershop — Sydney NSW">
+<meta property="og:description" content="Skin fades, beard trims & hot towel shaves on George Street, Sydney. ★ 4.9 · 445 Google reviews. Walk-ins only, open 7 days.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/ipoh-barbershop/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Barbers%27_chairs_seen_through_window_%2812161764335%29.jpg/1280px-Barbers%27_chairs_seen_through_window_%2812161764335%29.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --teal:#0f766e; --teal-dark:#083f3a; --copper:#d97706; --amber:#f59e0b;
+    --cream:#f7f3ea; --ink:#1c2422; --muted:#64706c;
+  }
+  body{ font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; }
+  img{ max-width:100%; display:block; }
+  a{ text-decoration:none; }
+  header{ position:sticky; top:0; z-index:50; background:rgba(8,63,58,.97); color:#fff;
+    display:flex; align-items:center; justify-content:space-between; padding:.7rem 1rem;
+    box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  .brand{ font-size:1.15rem; font-weight:800; letter-spacing:2px; }
+  .brand span{ color:var(--amber); }
+  .call-btn{ background:var(--copper); color:#fff; font-weight:700; padding:.55rem 1rem; border-radius:999px; font-size:.95rem; white-space:nowrap; }
+  .hero{ position:relative; color:#fff; text-align:center; }
+  .hero img{ width:100%; height:62vh; min-height:340px; object-fit:cover; }
+  .hero-overlay{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(8,63,58,.25),rgba(8,63,58,.9));
+    display:flex; flex-direction:column; justify-content:flex-end; align-items:center; padding:2rem 1.2rem 2.4rem; }
+  .hero h1{ font-size:2.6rem; line-height:1.1; letter-spacing:1px; text-shadow:0 2px 12px rgba(0,0,0,.4); }
+  .hero p.tag{ font-size:1.08rem; margin-top:.5rem; color:#fde9c8; }
+  .badge{ display:inline-block; margin-top:1rem; background:#fff; color:var(--teal-dark); font-weight:700;
+    padding:.4rem 1rem; border-radius:999px; font-size:.95rem; box-shadow:0 4px 14px rgba(0,0,0,.3); }
+  .badge .star{ color:#f59e0b; }
+  .hero-cta{ margin-top:1.2rem; display:flex; gap:.6rem; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:.7rem 1.4rem; border-radius:999px; font-weight:700; }
+  .btn-call{ background:var(--copper); color:#fff; }
+  .btn-ig{ background:#fff; color:var(--teal-dark); }
+  section{ padding:3rem 1.2rem; max-width:1080px; margin:0 auto; }
+  h2{ font-size:1.8rem; text-align:center; color:var(--teal-dark); margin-bottom:.4rem; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:2rem; }
+  .about p{ max-width:720px; margin:0 auto 1rem; text-align:center; font-size:1.05rem; }
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
+  .card{ background:#fff; border-radius:16px; padding:1.4rem 1.2rem; text-align:center;
+    box-shadow:0 4px 16px rgba(15,118,110,.10); border-top:5px solid var(--teal); }
+  .card .icon{ font-size:2rem; }
+  .card h3{ margin:.5rem 0 .3rem; font-size:1.08rem; color:var(--teal-dark); }
+  .card p{ color:var(--muted); font-size:.93rem; }
+  .card .spec{ display:inline-block; margin-top:.6rem; background:#fef3c7; color:#92400e; font-size:.78rem; font-weight:700; padding:.2rem .7rem; border-radius:999px; }
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.8rem; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.15); }
+  .hours-wrap{ max-width:520px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(15,118,110,.10); }
+  table{ width:100%; border-collapse:collapse; }
+  td{ padding:.8rem 1.2rem; border-bottom:1px solid #fef3c7; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--teal-dark); }
+  .visit{ text-align:center; }
+  .visit address{ font-style:normal; font-size:1.05rem; margin-bottom:1.2rem; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,.15); }
+  .cta-band{ background:linear-gradient(120deg,var(--teal),var(--teal-dark)); color:#fff; text-align:center; padding:2.6rem 1.2rem; }
+  .cta-band h2{ color:#fff; }
+  .cta-band p{ color:#d7f0ec; margin-bottom:1.4rem; }
+  footer{ background:#052e2a; color:#bfe3dd; text-align:center; padding:1.4rem 1rem; font-size:.9rem; }
+  footer a{ color:var(--amber); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">IPOH <span>BARBERSHOP</span></div>
+  <a class="call-btn" href="tel:+61451249306">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Barbers%27_chairs_seen_through_window_%2812161764335%29.jpg/1280px-Barbers%27_chairs_seen_through_window_%2812161764335%29.jpg" alt="Barber chairs at Ipoh Barbershop, George Street Sydney">
+  <div class="hero-overlay">
+    <h1>Ipoh Barbershop</h1>
+    <p class="tag">Friendly, experienced &amp; trusted — right on George Street, Sydney</p>
+    <div class="badge"><span class="star">★</span> 4.9 · 445 Google reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-call" href="tel:+61451249306">📞 +61 451 249 306</a>
+      <a class="btn btn-ig" href="https://www.instagram.com/ipoh_barbershop" target="_blank" rel="noopener">📸 @ipoh_barbershop</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p class="sub">Summit Arcade, 569 George Street — in the middle of Sydney's CBD</p>
+  <p>Ipoh Barbershop is a walk-in-only barbershop open seven days a week on George Street. Our own promise is simple — friendly, experienced and trusted — and with 445 reviews at 4.9 stars, our customers clearly agree.</p>
+  <p>No bookings, no fuss: walk in, take a seat, and leave sharp. Skin fades, classic cuts, beard trims and hot towel shaves, done properly.</p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <p class="sub">Walk-ins only — call us for pricing</p>
+  <div class="cards">
+    <div class="card"><div class="icon">💈</div><h3>Skin Fades</h3><p>Clean, sharp skin fades blended to perfection — our most-requested cut.</p><span class="spec">★ Most Popular</span></div>
+    <div class="card"><div class="icon">🧔</div><h3>Beard Trims</h3><p>Shape, tidy and detail work that keeps your beard looking its best.</p></div>
+    <div class="card"><div class="icon">🪒</div><h3>Hot Towel Shave</h3><p>The classic hot towel shave — smooth, close and relaxing.</p></div>
+    <div class="card"><div class="icon">✂️</div><h3>Classic Cuts</h3><p>Timeless styles and modern cuts, tailored to you by experienced barbers.</p></div>
+    <div class="card"><div class="icon">👦</div><h3>Kids Cuts</h3><p>Friendly, patient cuts for the young ones.</p></div>
+    <div class="card"><div class="icon">🚶</div><h3>Walk-Ins Only</h3><p>No appointment needed — just walk in, any day of the week.</p><span class="spec">Open 7 Days</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">The chairs, the tools, the craft</p>
+  <div class="gallery">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Icebreaker_SHIRASE_-_%E3%81%97%E3%82%89%E3%81%9B-_Barber_room.jpg/1280px-Icebreaker_SHIRASE_-_%E3%81%97%E3%82%89%E3%81%9B-_Barber_room.jpg" alt="A classic barber room with chairs and mirrors">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Electric_hair_clipper_%281%29.jpg" alt="Electric hair clippers">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Razor%2C_pair_%28AM_1962.54-17%29.jpg/1280px-Razor%2C_pair_%28AM_1962.54-17%29.jpg" alt="A pair of classic razors">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Wacker_Jungmeister_Rasiermesser_mit_Pinsel_und_Schale.jpg/1280px-Wacker_Jungmeister_Rasiermesser_mit_Pinsel_und_Schale.jpg" alt="Razor, shaving brush and bowl">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/CebuCity_Philippines_Hairdressers-equipment-01.jpg/1280px-CebuCity_Philippines_Hairdressers-equipment-01.jpg" alt="Barber's tools and equipment">
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Open seven days — walk-ins only</p>
+  <div class="hours-wrap">
+    <table>
+      <tr><td>Monday</td><td>10:30 AM – 7:00 PM</td></tr>
+      <tr><td>Tuesday</td><td>10:30 AM – 7:00 PM</td></tr>
+      <tr><td>Wednesday</td><td>10:30 AM – 7:00 PM</td></tr>
+      <tr><td>Thursday</td><td>10:30 AM – 7:00 PM</td></tr>
+      <tr><td>Friday</td><td>10:30 AM – 7:00 PM</td></tr>
+      <tr><td>Saturday</td><td>10:30 AM – 7:00 PM</td></tr>
+      <tr><td>Sunday</td><td>10:30 AM – 6:00 PM</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p class="sub">Find us in Summit Arcade on George Street</p>
+  <address>Unit 185/569 George St (Summit Arcade),<br>Sydney NSW 2000</address>
+  <iframe class="map" loading="lazy" title="Map — Ipoh Barbershop Sydney"
+    src="https://www.google.com/maps?q=Ipoh%20Barbershop%2C%20569%20George%20St%2C%20Sydney%20NSW%202000&output=embed"></iframe>
+</section>
+
+<div class="cta-band">
+  <h2>Walk in sharp, walk out sharper</h2>
+  <p>No booking needed — just come by. Questions? Give us a call or follow us on Instagram.</p>
+  <div class="hero-cta">
+    <a class="btn btn-call" href="tel:+61451249306">📞 +61 451 249 306</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/ipoh_barbershop" target="_blank" rel="noopener">📸 @ipoh_barbershop</a>
+  </div>
+</div>
+
+<footer>
+  Ipoh Barbershop · Unit 185/569 George St (Summit Arcade), Sydney NSW 2000<br>
+  📞 <a href="tel:+61451249306">+61 451 249 306</a> · 📸 <a href="https://www.instagram.com/ipoh_barbershop" target="_blank" rel="noopener">@ipoh_barbershop</a>
+</footer>
+
+</body>
+</html>

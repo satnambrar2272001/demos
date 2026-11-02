@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Nails &amp; Spa — Surrey BC</title>
+<meta name="description" content="Home Nails & Spa, 10769 132 St, Surrey BC — gel extensions, acrylics, dip powder, Russian manicure, pedicure and nail art designs. Open 7 days.">
+<meta property="og:title" content="Home Nails & Spa — Surrey BC">
+<meta property="og:description" content="Extensions, nail art designs, Russian manicure, mani + pedi in Surrey, BC. ★ 4.9 · 40 reviews. Open Mon–Sat 10–8, Sun 10–5:30.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/home-nails-spa/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/French_tip_nail_art.jpg/1280px-French_tip_nail_art.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --teal:#0e7490; --teal-dark:#164e63; --deep:#083344; --coral:#f97316;
+    --gold:#facc15; --cream:#f0fdfa; --ink:#1f2937; --muted:#5b6b73;
+  }
+  body{ font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; }
+  img{ max-width:100%; display:block; }
+  a{ text-decoration:none; }
+
+  header{ position:sticky; top:0; z-index:50; background:rgba(8,51,68,.97); color:#fff;
+    display:flex; align-items:center; justify-content:space-between; padding:.7rem 1rem;
+    box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  .brand{ font-size:1.15rem; font-weight:800; letter-spacing:.5px; }
+  .brand span{ color:var(--gold); }
+  .call-btn{ background:var(--coral); color:#fff; font-weight:700; padding:.55rem 1rem; border-radius:999px; font-size:.95rem; white-space:nowrap; }
+  .call-btn:active{ transform:scale(.97); }
+
+  .hero{ position:relative; color:#fff; text-align:center; }
+  .hero img{ width:100%; height:62vh; min-height:340px; object-fit:cover; }
+  .hero-overlay{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(8,51,68,.30),rgba(8,51,68,.90));
+    display:flex; flex-direction:column; justify-content:flex-end; align-items:center; padding:2rem 1.2rem 2.4rem; }
+  .hero h1{ font-size:2.5rem; line-height:1.1; text-shadow:0 2px 12px rgba(0,0,0,.4); }
+  .hero p.tag{ font-size:1.08rem; margin-top:.5rem; color:#cffafe; }
+  .badge{ display:inline-block; margin-top:1rem; background:#fff; color:var(--teal-dark); font-weight:700;
+    padding:.4rem 1rem; border-radius:999px; font-size:.95rem; box-shadow:0 4px 14px rgba(0,0,0,.3); }
+  .badge .star{ color:#f59e0b; }
+  .hero-cta{ margin-top:1.2rem; display:flex; gap:.6rem; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:.7rem 1.4rem; border-radius:999px; font-weight:700; }
+  .btn-call{ background:var(--coral); color:#fff; }
+  .btn-ig{ background:#fff; color:var(--teal-dark); }
+
+  section{ padding:3rem 1.2rem; max-width:1080px; margin:0 auto; }
+  h2{ font-size:1.8rem; text-align:center; color:var(--teal-dark); margin-bottom:.4rem; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:2rem; }
+  .about p{ max-width:720px; margin:0 auto 1rem; text-align:center; font-size:1.05rem; }
+
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
+  .card{ background:#fff; border-radius:16px; padding:1.4rem 1.2rem; text-align:center;
+    box-shadow:0 4px 16px rgba(14,116,144,.12); border-top:5px solid var(--teal); }
+  .card .icon{ font-size:2rem; }
+  .card h3{ margin:.5rem 0 .3rem; font-size:1.08rem; color:var(--teal-dark); }
+  .card p{ color:var(--muted); font-size:.93rem; }
+  .card .spec{ display:inline-block; margin-top:.6rem; background:#fef9c3; color:#854d0e; font-size:.78rem; font-weight:700; padding:.2rem .7rem; border-radius:999px; }
+
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.8rem; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.15); }
+
+  .hours-wrap{ max-width:520px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(14,116,144,.12); }
+  table{ width:100%; border-collapse:collapse; }
+  td{ padding:.8rem 1.2rem; border-bottom:1px solid #cffafe; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--teal-dark); }
+
+  .visit{ text-align:center; }
+  .visit address{ font-style:normal; font-size:1.05rem; margin-bottom:1.2rem; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,.15); }
+
+  .cta-band{ background:linear-gradient(120deg,var(--teal),var(--deep)); color:#fff; text-align:center; padding:2.6rem 1.2rem; }
+  .cta-band h2{ color:#fff; }
+  .cta-band p{ color:#cffafe; margin-bottom:1.4rem; }
+
+  footer{ background:#04202c; color:#a5f3fc; text-align:center; padding:1.4rem 1rem; font-size:.9rem; }
+  footer a{ color:var(--gold); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">HOME NAILS <span>&amp; SPA</span></div>
+  <a class="call-btn" href="tel:+12368811102">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/French_tip_nail_art.jpg/1280px-French_tip_nail_art.jpg" alt="French tip nail art close-up at Home Nails & Spa Surrey">
+  <div class="hero-overlay">
+    <h1>Home Nails &amp; Spa</h1>
+    <p class="tag">Extensions, nail art designs, mani + pedi — Surrey, BC</p>
+    <div class="badge"><span class="star">★</span> 4.9 · 40 reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-call" href="tel:+12368811102">📞 +1 236-881-1102</a>
+      <a class="btn btn-ig" href="https://www.instagram.com/home_nails_and_spa" target="_blank" rel="noopener">📸 @home_nails_and_spa</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p class="sub">10769 132 Street — in the heart of Surrey</p>
+  <p>Home Nails &amp; Spa is a woman-owned Surrey nail studio known for detailed nail art designs, clean extension work and its Russian manicure specialty — open seven days a week.</p>
+  <p>From dip powder and gel extensions to a relaxing pedicure, everything is booked the easy way: DM or text for an appointment. Visiting the Maple Ridge side instead? Our second location is on Instagram at @homenailsandspa_mapleridge.</p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <p class="sub">What we do best — call or text for pricing and appointments</p>
+  <div class="cards">
+    <div class="card"><div class="icon">💅</div><h3>Gel Extensions</h3><p>Strong, natural-looking gel extensions shaped and finished exactly how you like them.</p></div>
+    <div class="card"><div class="icon">✨</div><h3>Acrylic Nails</h3><p>Durable acrylic sets built for length, strength and a flawless finish.</p></div>
+    <div class="card"><div class="icon">🌈</div><h3>Dip Powder Nails</h3><p>Lightweight, long-lasting dip powder colour with a smooth, glossy shine.</p></div>
+    <div class="card"><div class="icon">🪷</div><h3>Russian Manicure</h3><p>Our specialty — a precise, detailed manicure technique for an ultra-clean cuticle line.</p><span class="spec">★ Specialty</span></div>
+    <div class="card"><div class="icon">🎨</div><h3>Nail Art Designs</h3><p>Custom art designs — from minimal French tips to full creative sets.</p></div>
+    <div class="card"><div class="icon">💎</div><h3>Gel Nails</h3><p>Chip-resistant gel polish in every shade, finished to a mirror shine.</p></div>
+    <div class="card"><div class="icon">🦶</div><h3>Pedicure</h3><p>A relaxing pedicure that leaves feet soft, tidy and polish-perfect.</p></div>
+    <div class="card"><div class="icon">🤲</div><h3>Mani + Pedi</h3><p>The full reset — manicure and pedicure together in one visit.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Nail art, extensions, colour &amp; inside the studio</p>
+  <div class="gallery">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/French_tip_nail_art.jpg/1280px-French_tip_nail_art.jpg" alt="French tip nail art, close-up">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Nail_Art_NP_01.JPG/1280px-Nail_Art_NP_01.JPG" alt="Colourful nail art design">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Nail_extensions_with_nail_art.jpg" alt="Nail extensions with nail art">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Green_nail_polish.jpg" alt="Green nail polish bottle">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Jenny_Bui_salon_3.jpg/1280px-Jenny_Bui_salon_3.jpg" alt="Inside a nail salon">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Pedicure_Salon_Angelique_pen%2C_Charlois%2C_Rotterdam_%282022%29_01.jpg/1280px-Pedicure_Salon_Angelique_pen%2C_Charlois%2C_Rotterdam_%282022%29_01.jpg" alt="Pedicure salon chairs">
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Open seven days a week in Surrey</p>
+  <div class="hours-wrap">
+    <table>
+      <tr><td>Monday</td><td>10:00 AM – 8:00 PM</td></tr>
+      <tr><td>Tuesday</td><td>10:00 AM – 8:00 PM</td></tr>
+      <tr><td>Wednesday</td><td>10:00 AM – 8:00 PM</td></tr>
+      <tr><td>Thursday</td><td>10:00 AM – 8:00 PM</td></tr>
+      <tr><td>Friday</td><td>10:00 AM – 8:00 PM</td></tr>
+      <tr><td>Saturday</td><td>10:00 AM – 8:00 PM</td></tr>
+      <tr><td>Sunday</td><td>10:00 AM – 5:30 PM</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p class="sub">Find us on 132 Street, Surrey</p>
+  <address>10769 132 St,<br>Surrey, BC V3T 3W4</address>
+  <iframe class="map" loading="lazy" title="Map — Home Nails & Spa Surrey"
+    src="https://www.google.com/maps?q=Home%20Nails%20%26%20Spa%2C%2010769%20132%20St%2C%20Surrey%2C%20BC%20V3T%203W4&output=embed"></iframe>
+</section>
+
+<div class="cta-band">
+  <h2>Ready for your next set?</h2>
+  <p>Call or text to book your appointment — or see our latest designs on Instagram.</p>
+  <div class="hero-cta">
+    <a class="btn btn-call" href="tel:+12368811102">📞 +1 236-881-1102</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/home_nails_and_spa" target="_blank" rel="noopener">📸 @home_nails_and_spa</a>
+  </div>
+</div>
+
+<footer>
+  Home Nails &amp; Spa · 10769 132 St, Surrey, BC V3T 3W4<br>
+  📞 <a href="tel:+12368811102">+1 236-881-1102</a> · 📸 <a href="https://www.instagram.com/home_nails_and_spa" target="_blank" rel="noopener">@home_nails_and_spa</a>
+</footer>
+
+</body>
+</html>

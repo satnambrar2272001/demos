@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilgrim Coffee — Specialty Coffee, Hobart</title>
+<meta name="description" content="Pilgrim Coffee at 48 Argyle St, Hobart — specialty espresso and filter coffee, famous cinnamon rolls, Portuguese tarts, ham & gruyère croissants and brisket Reuben in a cosy church-bench cafe.">
+<meta property="og:title" content="Pilgrim Coffee — Specialty Coffee, Hobart">
+<meta property="og:description" content="Market leaders of specialty coffee in Tasmania — espresso, single origins & filter brews, cinny buns and Portuguese tarts at 48 Argyle St, Hobart. ★ 4.5 · 365 Google reviews.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/pilgrim-coffee/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Warm_cup_of_coffee_on_a_table_at_a_cafe.jpg/1280px-Warm_cup_of_coffee_on_a_table_at_a_cafe.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --cream:#faf5ec; --ink:#2a251d; --muted:#837768;
+    --pine:#1d4a38; --pine-d:#113527; --gold:#d97706; --gold-d:#b45309;
+    --card:#ffffff;
+  }
+  body{ font-family:'Segoe UI', system-ui, -apple-system, Arial, sans-serif; background:var(--cream); color:var(--ink); line-height:1.6; }
+  a{ text-decoration:none; }
+  header{ position:sticky; top:0; z-index:50; background:rgba(250,245,236,.96); backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:space-between; padding:10px 16px; box-shadow:0 2px 10px rgba(60,45,20,.12); }
+  .brand{ font-size:1.25rem; font-weight:800; color:var(--pine-d); letter-spacing:.3px; }
+  .brand span{ color:var(--gold); }
+  .call-btn{ background:var(--gold); color:#fff; font-weight:700; padding:9px 16px; border-radius:999px; font-size:.95rem; box-shadow:0 3px 8px rgba(217,119,6,.4); }
+  .call-btn:hover{ background:var(--gold-d); }
+  .hero{ position:relative; text-align:center; color:#fff; }
+  .hero img{ width:100%; height:62vh; min-height:380px; object-fit:cover; display:block; filter:brightness(.7); }
+  .hero-text{ position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; }
+  .hero-text h1{ font-size:2.6rem; line-height:1.15; text-shadow:0 3px 14px rgba(0,0,0,.45); }
+  .hero-text p{ font-size:1.15rem; margin-top:10px; max-width:540px; text-shadow:0 2px 10px rgba(0,0,0,.5); }
+  .badge{ margin-top:18px; background:var(--gold); color:#fff7e6; font-weight:800; padding:8px 18px; border-radius:999px; font-size:1rem; box-shadow:0 4px 12px rgba(0,0,0,.3); }
+  .hero-cta{ margin-top:20px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:12px 22px; border-radius:999px; font-weight:700; font-size:1rem; }
+  .btn-gold{ background:var(--gold); color:#fff; }
+  .btn-ghost{ background:rgba(255,255,255,.92); color:var(--pine-d); }
+  section{ max-width:1000px; margin:0 auto; padding:44px 18px 8px; }
+  h2{ font-size:1.7rem; color:var(--pine-d); margin-bottom:6px; text-align:center; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:24px; }
+  .about{ display:grid; gap:20px; align-items:center; }
+  .about img{ width:100%; border-radius:16px; box-shadow:0 8px 22px rgba(60,45,20,.18); }
+  @media(min-width:760px){ .about{ grid-template-columns:1fr 1fr; } .hero-text h1{ font-size:3.4rem; } }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; }
+  .card{ background:var(--card); border-radius:14px; padding:20px 16px; box-shadow:0 4px 14px rgba(60,45,20,.09); border-top:4px solid var(--gold); }
+  .card .ico{ font-size:1.7rem; }
+  .card h3{ margin:6px 0 4px; font-size:1.08rem; color:var(--ink); }
+  .card p{ color:var(--muted); font-size:.94rem; }
+  .card .spec{ display:inline-block; margin-top:.6rem; background:#fef3c7; color:var(--gold-d); font-size:.78rem; font-weight:700; padding:.2rem .7rem; border-radius:999px; }
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  .gallery figure{ border-radius:14px; overflow:hidden; box-shadow:0 6px 16px rgba(60,45,20,.14); background:#fff; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; display:block; }
+  .gallery figcaption{ padding:8px 12px; font-size:.9rem; color:var(--muted); }
+  table{ width:100%; max-width:520px; margin:0 auto; border-collapse:collapse; background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 4px 14px rgba(60,45,20,.09); }
+  td{ padding:11px 18px; border-bottom:1px solid #f3e8d2; font-size:.98rem; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--pine-d); }
+  .visit{ text-align:center; }
+  .visit p{ margin-bottom:14px; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 8px 22px rgba(60,45,20,.16); }
+  .cta{ margin:48px auto 0; max-width:1000px; background:linear-gradient(120deg, var(--pine) 0%, var(--pine-d) 60%, #081f16 100%); border-radius:20px; padding:36px 22px; text-align:center; color:#fff; }
+  .cta h2{ color:#fff; }
+  .cta p{ opacity:.92; margin-bottom:20px; }
+  .cta .btn-ig{ background:#fff; color:var(--pine-d); }
+  .cta .btn-call{ background:var(--gold); color:#fff; }
+  footer{ text-align:center; padding:30px 16px 38px; color:var(--muted); font-size:.9rem; }
+  footer a{ color:var(--pine-d); font-weight:600; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">☕ Pilgrim <span>Coffee</span></div>
+  <a class="call-btn" href="tel:+61362341999">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Warm_cup_of_coffee_on_a_table_at_a_cafe.jpg/1280px-Warm_cup_of_coffee_on_a_table_at_a_cafe.jpg" alt="A warm cup of specialty coffee at Pilgrim Coffee, Hobart">
+  <div class="hero-text">
+    <h1>Pilgrim Coffee</h1>
+    <p>Hobart's specialty coffee institution — market-leading brews, famous cinny buns and a cosy church-bench room on Argyle Street.</p>
+    <div class="badge">★ 4.5 · 365 Google reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="tel:+61362341999">📞 +61 3 6234 1999</a>
+      <a class="btn btn-ghost" href="#menu">See the Menu</a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>About Pilgrim</h2>
+  <p class="sub">Specialty coffee in the heart of Hobart</p>
+  <div class="about">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Coffee_table_by_a_wooden_wall_%28Unsplash%29.jpg/1280px-Coffee_table_by_a_wooden_wall_%28Unsplash%29.jpg" alt="Warm timber and church-bench seating inside Pilgrim Coffee">
+    <div>
+      <p>Pilgrim Coffee is a Hobart institution — the team proudly calls itself the market leader of specialty coffee in Tasmania, and hundreds of five-star reviews suggest the locals agree.</p>
+      <p style="margin-top:12px;">Inside, warm timber and church-bench seating make it one of the cosiest rooms in the city. Come for a slow filter brew and one of the cinnamon rolls reviewers can't stop talking about.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <h2>Menu Highlights</h2>
+  <p class="sub">Serious coffee, beloved bakes — call ahead and we will have it ready</p>
+  <div class="grid">
+    <div class="card"><div class="ico">☕</div><h3>House Espresso</h3><p>Our house blend by Sensory Lab, pulled with care on the espresso bar.</p><span class="spec">Sensory Lab</span></div>
+    <div class="card"><div class="ico">🌍</div><h3>Rotating Single Origins</h3><p>Single-origin beans on rotation from Proud Mary, Five Senses and Market Lane.</p></div>
+    <div class="card"><div class="ico">💧</div><h3>Filter &amp; Pour Over</h3><p>Multiple espresso and filter methods — ask the team what's brewing today.</p></div>
+    <div class="card"><div class="ico">🌀</div><h3>Cinnamon Rolls</h3><p>Our famous "cinny buns" — the bake reviewers rave about most.</p><span class="spec">★ Local favourite</span></div>
+    <div class="card"><div class="ico">🥧</div><h3>Portuguese Tarts</h3><p>Crisp, caramelised custard tarts — perfect with a flat white.</p></div>
+    <div class="card"><div class="ico">🥐</div><h3>Ham &amp; Gruyère Croissant</h3><p>Flaky, buttery and toasted — a Pilgrim breakfast staple.</p></div>
+    <div class="card"><div class="ico">🥪</div><h3>Brisket Reuben</h3><p>Slow brisket, stacked the proper way on a hearty sandwich.</p></div>
+    <div class="card"><div class="ico">🥬</div><h3>Local &amp; Seasonal</h3><p>A food menu driven by fresh Tasmanian local produce.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Brews, bakes &amp; the Pilgrim ritual</p>
+  <div class="gallery">
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Manual_drip_%28pour-over%29_coffee.jpg/1280px-Manual_drip_%28pour-over%29_coffee.jpg" alt="Pour-over filter coffee brewing"><figcaption>Slow filter brews, poured to order</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Pulling_a_triple_espresso_shot_with_a_naked_portafilter.jpg/1280px-Pulling_a_triple_espresso_shot_with_a_naked_portafilter.jpg" alt="Espresso extracting from a portafilter"><figcaption>Espresso, dialled in every morning</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Cinnamon_bun_-_Black_Mocha_2024-01-08.jpg/1280px-Cinnamon_bun_-_Black_Mocha_2024-01-08.jpg" alt="A cinnamon roll"><figcaption>The famous cinny buns</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Pastel_de_nata_%2818616473070%29.jpg/1280px-Pastel_de_nata_%2818616473070%29.jpg" alt="Portuguese custard tarts"><figcaption>Portuguese tarts, fresh and caramelised</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Ham_and_cheese_croissant_sandwich.jpg/1280px-Ham_and_cheese_croissant_sandwich.jpg" alt="Ham and cheese croissant"><figcaption>Ham &amp; gruyère croissant</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Belle%27s_Diner%2C_French_Market_Place%2C_New_Orleans%2C_24_May_2016_-_Reuben_%26_Fries.jpg/1280px-Belle%27s_Diner%2C_French_Market_Place%2C_New_Orleans%2C_24_May_2016_-_Reuben_%26_Fries.jpg" alt="A Reuben sandwich with fries"><figcaption>The brisket Reuben</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Early starts, seven days in the city</p>
+  <table>
+    <tr><td>Monday</td><td>6:30 AM – 3:00 PM</td></tr>
+    <tr><td>Tuesday</td><td>6:30 AM – 3:00 PM</td></tr>
+    <tr><td>Wednesday</td><td>6:30 AM – 3:00 PM</td></tr>
+    <tr><td>Thursday</td><td>6:30 AM – 3:00 PM</td></tr>
+    <tr><td>Friday</td><td>6:30 AM – 3:00 PM</td></tr>
+    <tr><td>Saturday</td><td>7:30 AM – 1:00 PM</td></tr>
+    <tr><td>Sunday</td><td>7:30 AM – 1:00 PM</td></tr>
+  </table>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p>📍 48 Argyle St, Hobart TAS 7000<br>📞 <a href="tel:+61362341999" style="color:var(--pine-d);font-weight:600;">+61 3 6234 1999</a></p>
+  <iframe class="map" loading="lazy" src="https://www.google.com/maps?q=Pilgrim%20Coffee%2048%20Argyle%20St%20Hobart%20TAS%207000&output=embed" title="Pilgrim Coffee location map"></iframe>
+</section>
+
+<div style="padding:0 18px;">
+  <div class="cta">
+    <h2>Make the pilgrimage ☕</h2>
+    <p>Call ahead for coffee &amp; bakes, or follow along for single-origin drops and daily specials.</p>
+    <a class="btn btn-call" href="tel:+61362341999">📞 Call the Cafe</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/pilgrimcoffee" target="_blank" rel="noopener">📷 @pilgrimcoffee</a>
+  </div>
+</div>
+
+<footer>
+  Pilgrim Coffee · 48 Argyle St, Hobart TAS 7000 · <a href="tel:+61362341999">+61 3 6234 1999</a><br>
+  Open Mon–Fri 6:30 AM – 3:00 PM · Sat–Sun 7:30 AM – 1:00 PM
+</footer>
+
+</body>
+</html>

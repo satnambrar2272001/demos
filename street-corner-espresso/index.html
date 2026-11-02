@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Street Corner Espresso — Beachside Coffee & Brunch, Burleigh Heads</title>
+<meta name="description" content="Street Corner Espresso at Burleigh Heads — coffee ground on demand, all-day breakfast & brunch, smashed avo with beetroot sauce, eggs benedict, dirty chai and dog-friendly treats, minutes from Burleigh beach.">
+<meta property="og:title" content="Street Corner Espresso — Beachside Coffee & Brunch, Burleigh Heads">
+<meta property="og:description" content="Fresh-ground coffee, famous smashed avo & all-day brunch at Shop 1/1840 Gold Coast Hwy, Burleigh Heads. ★ 4.6 · 112 Google reviews. Open every day from 6 AM.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/street-corner-espresso/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Burleigh_Heads_beach_looking_towards_the_headland.jpg/1280px-Burleigh_Heads_beach_looking_towards_the_headland.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --sand:#fff9f0; --ink:#27313a; --muted:#77828a;
+    --ocean:#0369a1; --ocean-d:#075985; --sunset:#ea580c; --sunset-d:#c2410c;
+    --sun:#facc15; --card:#ffffff;
+  }
+  body{ font-family:'Segoe UI', system-ui, -apple-system, Arial, sans-serif; background:var(--sand); color:var(--ink); line-height:1.6; }
+  a{ text-decoration:none; }
+  header{ position:sticky; top:0; z-index:50; background:rgba(255,249,240,.96); backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:space-between; padding:10px 16px; box-shadow:0 2px 10px rgba(7,89,133,.14); }
+  .brand{ font-size:1.25rem; font-weight:800; color:var(--ocean-d); letter-spacing:.3px; }
+  .brand span{ color:var(--sunset); }
+  .call-btn{ background:var(--sunset); color:#fff; font-weight:700; padding:9px 16px; border-radius:999px; font-size:.95rem; box-shadow:0 3px 8px rgba(234,88,12,.4); }
+  .call-btn:hover{ background:var(--sunset-d); }
+  .hero{ position:relative; text-align:center; color:#fff; }
+  .hero img{ width:100%; height:62vh; min-height:380px; object-fit:cover; display:block; filter:brightness(.72); }
+  .hero-text{ position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; }
+  .hero-text h1{ font-size:2.6rem; line-height:1.15; text-shadow:0 3px 14px rgba(0,0,0,.45); }
+  .hero-text p{ font-size:1.15rem; margin-top:10px; max-width:540px; text-shadow:0 2px 10px rgba(0,0,0,.5); }
+  .badge{ margin-top:18px; background:var(--sun); color:#713f12; font-weight:800; padding:8px 18px; border-radius:999px; font-size:1rem; box-shadow:0 4px 12px rgba(0,0,0,.3); }
+  .hero-cta{ margin-top:20px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:12px 22px; border-radius:999px; font-weight:700; font-size:1rem; }
+  .btn-sunset{ background:var(--sunset); color:#fff; }
+  .btn-ghost{ background:rgba(255,255,255,.92); color:var(--ocean-d); }
+  section{ max-width:1000px; margin:0 auto; padding:44px 18px 8px; }
+  h2{ font-size:1.7rem; color:var(--ocean-d); margin-bottom:6px; text-align:center; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:24px; }
+  .about{ display:grid; gap:20px; align-items:center; }
+  .about img{ width:100%; border-radius:16px; box-shadow:0 8px 22px rgba(7,89,133,.18); }
+  @media(min-width:760px){ .about{ grid-template-columns:1fr 1fr; } .hero-text h1{ font-size:3.4rem; } }
+  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; }
+  .card{ background:var(--card); border-radius:14px; padding:20px 16px; box-shadow:0 4px 14px rgba(7,89,133,.09); border-top:4px solid var(--sun); }
+  .card .ico{ font-size:1.7rem; }
+  .card h3{ margin:6px 0 4px; font-size:1.08rem; color:var(--ink); }
+  .card p{ color:var(--muted); font-size:.94rem; }
+  .card .spec{ display:inline-block; margin-top:.6rem; background:#ffedd5; color:var(--sunset-d); font-size:.78rem; font-weight:700; padding:.2rem .7rem; border-radius:999px; }
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  .gallery figure{ border-radius:14px; overflow:hidden; box-shadow:0 6px 16px rgba(7,89,133,.14); background:#fff; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; display:block; }
+  .gallery figcaption{ padding:8px 12px; font-size:.9rem; color:var(--muted); }
+  table{ width:100%; max-width:520px; margin:0 auto; border-collapse:collapse; background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 4px 14px rgba(7,89,133,.09); }
+  td{ padding:11px 18px; border-bottom:1px solid #fdeeda; font-size:.98rem; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--ocean-d); }
+  .visit{ text-align:center; }
+  .visit p{ margin-bottom:14px; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 8px 22px rgba(7,89,133,.16); }
+  .cta{ margin:48px auto 0; max-width:1000px; background:linear-gradient(120deg, var(--ocean) 0%, var(--ocean-d) 60%, #0b3552 100%); border-radius:20px; padding:36px 22px; text-align:center; color:#fff; }
+  .cta h2{ color:#fff; }
+  .cta p{ opacity:.92; margin-bottom:20px; }
+  .cta .btn-ig{ background:#fff; color:var(--ocean-d); }
+  .cta .btn-call{ background:var(--sunset); color:#fff; }
+  footer{ text-align:center; padding:30px 16px 38px; color:var(--muted); font-size:.9rem; }
+  footer a{ color:var(--ocean-d); font-weight:600; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">🌊 Street Corner <span>Espresso</span></div>
+  <a class="call-btn" href="tel:+61731840043">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Burleigh_Heads_beach_looking_towards_the_headland.jpg/1280px-Burleigh_Heads_beach_looking_towards_the_headland.jpg" alt="Burleigh Heads beach and headland, near Street Corner Espresso">
+  <div class="hero-text">
+    <h1>Street Corner Espresso</h1>
+    <p>Beachside coffee &amp; all-day brunch in Burleigh Heads — fresh-ground coffee, famous smashed avo and sunshine, every day from 6 AM.</p>
+    <div class="badge">★ 4.6 · 112 Google reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-sunset" href="tel:+61731840043">📞 +61 7 3184 0043</a>
+      <a class="btn btn-ghost" href="#menu">See the Menu</a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2>About Street Corner</h2>
+  <p class="sub">Your corner of Burleigh, on the Gold Coast Highway</p>
+  <div class="about">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Burleigh_heads_beach.jpg/1280px-Burleigh_heads_beach.jpg" alt="Burleigh Heads beach, just down the road from the cafe">
+    <div>
+      <p>Street Corner Espresso is a family-run corner cafe in Burleigh Heads, run by Matt and loved by locals — reviewers call the coffee "NEXT LEVEL" and among the best on the Gold Coast.</p>
+      <p style="margin-top:12px;">Every cup starts fresh: beans are ground on demand for each customer. Add free WiFi, a focus on local and organic produce with less waste, and treats on the menu for your dog — it's the corner Burleigh starts its day on.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <h2>Menu Favourites</h2>
+  <p class="sub">All-day breakfast &amp; brunch — call ahead and we will have it ready</p>
+  <div class="grid">
+    <div class="card"><div class="ico">☕</div><h3>Fresh-Ground Coffee</h3><p>Beans ground on demand for every single cup — never sitting, always fresh.</p><span class="spec">★ Ground to order</span></div>
+    <div class="card"><div class="ico">🥑</div><h3>Smashed Avo</h3><p>Our famous smashed avo with beetroot sauce — the plate Burleigh talks about.</p></div>
+    <div class="card"><div class="ico">🍳</div><h3>Eggs Benedict</h3><p>The all-day breakfast classic, done properly.</p></div>
+    <div class="card"><div class="ico">🌶️</div><h3>Chilli Scrambled Eggs</h3><p>Scrambled eggs with a gentle chilli kick to wake you up.</p></div>
+    <div class="card"><div class="ico">🍵</div><h3>Dirty Chai</h3><p>Spiced chai meets a shot of espresso — best of both worlds.</p></div>
+    <div class="card"><div class="ico">🥞</div><h3>All-Day Brunch</h3><p>Generous breakfast and brunch plates all day, with gluten-free and vegan options.</p></div>
+    <div class="card"><div class="ico">🐾</div><h3>Dog-Friendly</h3><p>Bring your pup — there are doggie treats on the menu for four-legged locals.</p><span class="spec">Dogs welcome</span></div>
+    <div class="card"><div class="ico">📶</div><h3>Free WiFi</h3><p>Settle in with your laptop — coffee, brunch and free WiFi on the corner.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Coffee, brunch &amp; Burleigh mornings</p>
+  <div class="gallery">
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Cup_of_coffee_with_heart_design_and_glass_of_water_on_wooden_table_in_a_cafe_setting.jpg/1280px-Cup_of_coffee_with_heart_design_and_glass_of_water_on_wooden_table_in_a_cafe_setting.jpg" alt="Flat white with latte art on a cafe table"><figcaption>Flat whites, poured with care</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Liat_Portal_for_Foodie_Disorder_-_Israeli_breakfast_with_scrambled_eggs%2C_avocado_and_tomato_salad.jpg/1280px-Liat_Portal_for_Foodie_Disorder_-_Israeli_breakfast_with_scrambled_eggs%2C_avocado_and_tomato_salad.jpg" alt="Smashed avocado and scrambled eggs breakfast plate"><figcaption>Smashed avo &amp; eggs, Street Corner style</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Scrambled_eggs_on_toast_-_Joe%27s_Cafe_2024-04-14.jpg/1280px-Scrambled_eggs_on_toast_-_Joe%27s_Cafe_2024-04-14.jpg" alt="Scrambled eggs on toast"><figcaption>Chilli scrambled eggs on toast</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Traditional_Eggs_Benedict.jpg/1280px-Traditional_Eggs_Benedict.jpg" alt="Eggs Benedict with hollandaise"><figcaption>Eggs benedict, all day</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Chai_Latte_-_T_%40_The_Dials_2024-02-26.jpg/1280px-Chai_Latte_-_T_%40_The_Dials_2024-02-26.jpg" alt="A chai latte"><figcaption>Dirty chai — spice meets espresso</figcaption></figure>
+    <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/A_Beagle_drinking_water_from_a_bowl.jpg/1280px-A_Beagle_drinking_water_from_a_bowl.jpg" alt="A dog enjoying a drink of water"><figcaption>Pups welcome — treats on the menu</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Open every day from 6 AM</p>
+  <table>
+    <tr><td>Monday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Tuesday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Wednesday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Thursday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Friday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Saturday</td><td>6:00 AM – 1:30 PM</td></tr>
+    <tr><td>Sunday</td><td>6:00 AM – 1:30 PM</td></tr>
+  </table>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p>📍 Shop 1/1840 Gold Coast Hwy, Burleigh Heads QLD 4220<br>📞 <a href="tel:+61731840043" style="color:var(--ocean-d);font-weight:600;">+61 7 3184 0043</a></p>
+  <iframe class="map" loading="lazy" src="https://www.google.com/maps?q=Street%20Corner%20Espresso%201840%20Gold%20Coast%20Hwy%20Burleigh%20Heads%20QLD%204220&output=embed" title="Street Corner Espresso location map"></iframe>
+</section>
+
+<div style="padding:0 18px;">
+  <div class="cta">
+    <h2>Start your Burleigh day right 🌊</h2>
+    <p>Call ahead for coffee &amp; brunch, or follow along for daily specials.</p>
+    <a class="btn btn-call" href="tel:+61731840043">📞 Call the Cafe</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/streetcornerespresso" target="_blank" rel="noopener">📷 @streetcornerespresso</a>
+  </div>
+</div>
+
+<footer>
+  Street Corner Espresso · Shop 1/1840 Gold Coast Hwy, Burleigh Heads QLD 4220 · <a href="tel:+61731840043">+61 7 3184 0043</a><br>
+  Open every day 6:00 AM – 1:30 PM
+</footer>
+
+</body>
+</html>

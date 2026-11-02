@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iris Nail Salon — Surrey BC</title>
+<meta name="description" content="Iris Nail Salon, 13630 72 Ave Unit 105, Surrey BC — nails, pedicure, lash extensions, brow tinting and waxing. Appointments by phone. Open 7 days.">
+<meta property="og:title" content="Iris Nail Salon — Surrey BC">
+<meta property="og:description" content="Nails, lashes, brows & waxing in Newton, Surrey. ★ 4.7 · 88 reviews. Open Mon–Sat 10–7, Sun 11–5. Appointments by phone.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://satnambrar2272001.github.io/demos/iris-nail-salon/">
+<meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Nail_Art_NP_02.JPG/1280px-Nail_Art_NP_02.JPG">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --plum:#a21caf; --plum-dark:#581c87; --deep:#3b0764; --rose:#e11d48;
+    --gold:#f59e0b; --cream:#fdf4ff; --ink:#2e2233; --muted:#7a6a80;
+  }
+  body{ font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; }
+  img{ max-width:100%; display:block; }
+  a{ text-decoration:none; }
+
+  header{ position:sticky; top:0; z-index:50; background:rgba(59,7,100,.97); color:#fff;
+    display:flex; align-items:center; justify-content:space-between; padding:.7rem 1rem;
+    box-shadow:0 2px 10px rgba(0,0,0,.25); }
+  .brand{ font-size:1.15rem; font-weight:800; letter-spacing:2px; }
+  .brand span{ color:var(--gold); }
+  .call-btn{ background:var(--rose); color:#fff; font-weight:700; padding:.55rem 1rem; border-radius:999px; font-size:.95rem; white-space:nowrap; }
+  .call-btn:active{ transform:scale(.97); }
+
+  .hero{ position:relative; color:#fff; text-align:center; }
+  .hero img{ width:100%; height:62vh; min-height:340px; object-fit:cover; }
+  .hero-overlay{ position:absolute; inset:0; background:linear-gradient(180deg,rgba(59,7,100,.28),rgba(59,7,100,.90));
+    display:flex; flex-direction:column; justify-content:flex-end; align-items:center; padding:2rem 1.2rem 2.4rem; }
+  .hero h1{ font-size:2.5rem; line-height:1.1; letter-spacing:1px; text-shadow:0 2px 12px rgba(0,0,0,.4); }
+  .hero p.tag{ font-size:1.08rem; margin-top:.5rem; color:#f5d0fe; }
+  .badge{ display:inline-block; margin-top:1rem; background:#fff; color:var(--plum-dark); font-weight:700;
+    padding:.4rem 1rem; border-radius:999px; font-size:.95rem; box-shadow:0 4px 14px rgba(0,0,0,.3); }
+  .badge .star{ color:#f59e0b; }
+  .hero-cta{ margin-top:1.2rem; display:flex; gap:.6rem; flex-wrap:wrap; justify-content:center; }
+  .btn{ padding:.7rem 1.4rem; border-radius:999px; font-weight:700; }
+  .btn-call{ background:var(--rose); color:#fff; }
+  .btn-ig{ background:#fff; color:var(--plum-dark); }
+
+  section{ padding:3rem 1.2rem; max-width:1080px; margin:0 auto; }
+  h2{ font-size:1.8rem; text-align:center; color:var(--plum-dark); margin-bottom:.4rem; }
+  .sub{ text-align:center; color:var(--muted); margin-bottom:2rem; }
+  .about p{ max-width:720px; margin:0 auto 1rem; text-align:center; font-size:1.05rem; }
+
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
+  .card{ background:#fff; border-radius:16px; padding:1.4rem 1.2rem; text-align:center;
+    box-shadow:0 4px 16px rgba(162,28,175,.12); border-top:5px solid var(--plum); }
+  .card .icon{ font-size:2rem; }
+  .card h3{ margin:.5rem 0 .3rem; font-size:1.08rem; color:var(--plum-dark); }
+  .card p{ color:var(--muted); font-size:.93rem; }
+  .card .spec{ display:inline-block; margin-top:.6rem; background:#fde68a; color:#92400e; font-size:.78rem; font-weight:700; padding:.2rem .7rem; border-radius:999px; }
+
+  .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:.8rem; }
+  .gallery img{ width:100%; height:210px; object-fit:cover; border-radius:14px; box-shadow:0 4px 12px rgba(0,0,0,.15); }
+
+  .hours-wrap{ max-width:520px; margin:0 auto; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(162,28,175,.12); }
+  table{ width:100%; border-collapse:collapse; }
+  td{ padding:.8rem 1.2rem; border-bottom:1px solid #f5d0fe; }
+  tr:last-child td{ border-bottom:none; }
+  td:last-child{ text-align:right; font-weight:600; color:var(--plum-dark); }
+
+  .visit{ text-align:center; }
+  .visit address{ font-style:normal; font-size:1.05rem; margin-bottom:1.2rem; }
+  .map{ width:100%; height:320px; border:0; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,.15); }
+
+  .cta-band{ background:linear-gradient(120deg,var(--plum),var(--deep)); color:#fff; text-align:center; padding:2.6rem 1.2rem; }
+  .cta-band h2{ color:#fff; }
+  .cta-band p{ color:#f5d0fe; margin-bottom:1.4rem; }
+
+  footer{ background:#2a0547; color:#e9d5ff; text-align:center; padding:1.4rem 1rem; font-size:.9rem; }
+  footer a{ color:var(--gold); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">IRIS <span>NAIL SALON</span></div>
+  <a class="call-btn" href="tel:+17785646868">📞 Call Now</a>
+</header>
+
+<div class="hero">
+  <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Nail_Art_NP_02.JPG/1280px-Nail_Art_NP_02.JPG" alt="Colourful nail art close-up at Iris Nail Salon Surrey">
+  <div class="hero-overlay">
+    <h1>Iris Nail Salon</h1>
+    <p class="tag">Nails · Lash extensions · Brow tinting · Waxing — Newton, Surrey</p>
+    <div class="badge"><span class="star">★</span> 4.7 · 88 reviews</div>
+    <div class="hero-cta">
+      <a class="btn btn-call" href="tel:+17785646868">📞 +1 778-564-6868</a>
+      <a class="btn btn-ig" href="https://www.instagram.com/irisnailsalon" target="_blank" rel="noopener">📸 @irisnailsalon</a>
+    </div>
+  </div>
+</div>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p class="sub">Unit 105, 13630 72 Avenue — Newton, Surrey</p>
+  <p>Iris Nail Salon is much more than nails. Alongside gel extensions, acrylics, Russian manicure and pedicures, the salon also offers lash extensions, brow tinting and waxing — a full beauty menu under one roof.</p>
+  <p>Appointments are by phone only, so every visit is booked in properly and never rushed. Call ahead and the team will get you in — open seven days a week.</p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <p class="sub">What we do best — appointments by phone, call for pricing</p>
+  <div class="cards">
+    <div class="card"><div class="icon">💅</div><h3>Gel Extensions</h3><p>Elegant gel extensions shaped to your style, from soft and natural to full glam.</p></div>
+    <div class="card"><div class="icon">✨</div><h3>Acrylic Nails</h3><p>Strong, long-lasting acrylic sets with a smooth, polished finish.</p></div>
+    <div class="card"><div class="icon">🪷</div><h3>Russian Manicure</h3><p>A precise, detailed manicure technique for an immaculate cuticle line.</p><span class="spec">★ Specialty</span></div>
+    <div class="card"><div class="icon">💎</div><h3>Gel Nails</h3><p>High-shine gel colour that stays glossy and chip-resistant for weeks.</p></div>
+    <div class="card"><div class="icon">🦶</div><h3>Pedicure</h3><p>A relaxing pedicure to refresh, tidy and polish — the full foot-care reset.</p></div>
+    <div class="card"><div class="icon">👁️</div><h3>Lash Extensions</h3><p>Lash extensions that open up the eyes — no mascara needed.</p></div>
+    <div class="card"><div class="icon">🌿</div><h3>Brow Tinting</h3><p>Brow tinting that defines and frames your face with natural-looking colour.</p></div>
+    <div class="card"><div class="icon">🌸</div><h3>Waxing</h3><p>Smooth, clean waxing services to complete your beauty routine.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <p class="sub">Nail art, colour, pedicure &amp; inside the salon</p>
+  <div class="gallery">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Nail_Art_NP_02.JPG/1280px-Nail_Art_NP_02.JPG" alt="Colourful nail art design, close-up">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Biab_nagels.jpg" alt="Natural BIAB-style gel nails">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Nail_art_with_stripes.jpg/1280px-Nail_art_with_stripes.jpg" alt="Nail art with stripes">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Bottle_of_blue_nail_polish.jpg" alt="Blue nail polish bottle">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Interior_view_of_modern_beauty_salon.jpg/1280px-Interior_view_of_modern_beauty_salon.jpg" alt="Inside a modern beauty salon">
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/French_pedicure.jpg/1280px-French_pedicure.jpg" alt="French pedicure finish">
+  </div>
+</section>
+
+<section>
+  <h2>Opening Hours</h2>
+  <p class="sub">Open seven days a week in Newton, Surrey</p>
+  <div class="hours-wrap">
+    <table>
+      <tr><td>Monday</td><td>10:00 AM – 7:00 PM</td></tr>
+      <tr><td>Tuesday</td><td>10:00 AM – 7:00 PM</td></tr>
+      <tr><td>Wednesday</td><td>10:00 AM – 7:00 PM</td></tr>
+      <tr><td>Thursday</td><td>10:00 AM – 7:00 PM</td></tr>
+      <tr><td>Friday</td><td>10:00 AM – 7:00 PM</td></tr>
+      <tr><td>Saturday</td><td>10:00 AM – 7:00 PM</td></tr>
+      <tr><td>Sunday</td><td>11:00 AM – 5:00 PM</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="visit">
+  <h2>Visit Us</h2>
+  <p class="sub">Find us on 72 Avenue, Newton</p>
+  <address>13630 72 Ave Unit 105,<br>Surrey, BC V3W 2P3</address>
+  <iframe class="map" loading="lazy" title="Map — Iris Nail Salon Surrey"
+    src="https://www.google.com/maps?q=Iris%20Nail%20Salon%2C%2013630%2072%20Ave%20Unit%20105%2C%20Surrey%2C%20BC%20V3W%202P3&output=embed"></iframe>
+</section>
+
+<div class="cta-band">
+  <h2>Book your beauty visit</h2>
+  <p>Appointments are by phone — call us to book nails, lashes, brows or waxing.</p>
+  <div class="hero-cta">
+    <a class="btn btn-call" href="tel:+17785646868">📞 +1 778-564-6868</a>
+    <a class="btn btn-ig" href="https://www.instagram.com/irisnailsalon" target="_blank" rel="noopener">📸 @irisnailsalon</a>
+  </div>
+</div>
+
+<footer>
+  Iris Nail Salon · 13630 72 Ave Unit 105, Surrey, BC V3W 2P3<br>
+  📞 <a href="tel:+17785646868">+1 778-564-6868</a> · 📸 <a href="https://www.instagram.com/irisnailsalon" target="_blank" rel="noopener">@irisnailsalon</a>
+</footer>
+
+</body>
+</html>
